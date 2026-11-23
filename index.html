@@ -1,0 +1,1223 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Designer's Surface Pack Bundle</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+:root{--paper:#ffffff;--ink:#000000;--grey:#6e6e6e;--hair:#e3e3e3;--fog:#f4f4f4;--accent:#1f2bff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper)}
+body{font:400 16px/1.55 Jost,Futura,"Century Gothic","Avenir Next",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+.hero{padding:56px 0 8px}
+.hero h1{font-weight:300;font-size:clamp(44px,8vw,120px);line-height:.95;letter-spacing:-.035em;margin:0}
+.hero .lead{font-size:clamp(19px,2vw,24px);font-weight:300;max-width:44ch;margin:28px 0 0}
+.hero .sub{color:var(--grey);max-width:64ch;margin:12px 0 0}
+.renders{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:44px 0 0}
+.renders .sq{aspect-ratio:1/1;background:var(--fog);overflow:hidden}
+.renders img{width:100%;height:100%;object-fit:cover;display:block}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin:56px 0 0}
+.facts div{padding:18px 18px 0 0}
+.facts strong{display:block;font-weight:300;font-size:44px;line-height:1;letter-spacing:-.02em}
+.facts span{color:var(--grey);font-size:15px}
+.sec{padding:80px 0 0}
+h2{font-weight:300;font-size:clamp(30px,3.6vw,48px);letter-spacing:-.02em;line-height:1.05;margin:0 0 12px}
+.intro{color:var(--grey);max-width:62ch;margin:0 0 32px}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:36px 56px}
+.how h3{font-weight:500;font-size:19px;margin:0 0 8px}
+.how p{margin:0;color:var(--grey);max-width:52ch}
+.pks{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:40px 28px}
+.pk{border-top:1px solid var(--ink);padding-top:14px}
+.pk .cover{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:var(--fog)}
+.pk h3{font-weight:500;font-size:22px;margin:14px 0 2px}
+.pk p{color:var(--grey);margin:0 0 12px;font-size:15px}
+.kg{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.sq{aspect-ratio:1/1;background:var(--fog);overflow:hidden}
+.sq img{width:100%;height:100%;object-fit:cover;display:block}
+details{max-width:72ch;border-top:1px solid var(--hair)}
+details:last-child{border-bottom:1px solid var(--hair)}
+summary{cursor:pointer;padding:14px 0;font-weight:500;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;font-weight:300}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--grey);margin:0 0 14px}
+.foot{margin-top:72px;border-top:1px solid var(--ink);padding:20px 0 48px;display:flex;justify-content:space-between;color:var(--grey);font-size:15px;flex-wrap:wrap;gap:8px}
+@media (max-width:820px){.wrap{padding:0 18px}.renders{grid-template-columns:1fr 1fr}.renders .sq:last-child{display:none}.facts{grid-template-columns:1fr 1fr}.how{grid-template-columns:1fr;gap:24px}.kg{grid-template-columns:repeat(2,1fr)}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 12px}
+.tile img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--fog);display:block}
+.tile span{display:block;font-size:14px;line-height:1.3;margin-top:6px}
+.pkh{font-weight:500;font-size:30px;letter-spacing:-.02em;margin:64px 0 4px;scroll-margin-top:24px}
+.pkh small{color:var(--grey);font-weight:300;font-size:17px;margin-left:10px}
+.pkd{color:var(--grey);margin:0 0 6px;max-width:70ch}
+.cat{font-weight:500;font-size:18px;margin:30px 0 14px}
+.cat small{color:var(--grey);font-weight:300;margin-left:8px}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 0;padding:0;list-style:none}
+.nav a{display:inline-block;border:1px solid var(--hair);padding:7px 12px;color:var(--ink);text-decoration:none;font-size:14px}
+.nav a:hover{border-color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:26px 18px}
+.cards a{color:var(--ink);text-decoration:none}
+.cards img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--fog);display:block}
+.cards b{display:block;font-weight:500;margin-top:8px;font-size:16px}
+.cards span{color:var(--grey);font-size:14px}
+</style></head><body><div class="wrap">
+<section class="hero">
+<h1>Designer&#8217;s Surface Pack Bundle</h1>
+<p class="lead">Every surface pack in one bundle.</p>
+<p class="sub">18 Cycles surface packs with 765 materials for Blender 5.x. Every material has a preview on this page, sorted by pack and category. Append any material from the Asset Browser and drop it on your object.</p>
+<div class="renders"><div class="sq"><img src="img/hero-1.jpg" alt="Chrome material render"></div><div class="sq"><img src="img/hero-2.jpg" alt="Candy &amp; Sweets material render"></div><div class="sq"><img src="img/hero-3.jpg" alt="Y2K material render"></div></div>
+<div class="facts"><div><strong>18</strong><span>surface packs</span></div><div><strong>765</strong><span>Cycles materials</span></div><div><strong>4</strong><span>world shaders (Studio Backdrops)</span></div><div><strong>765</strong><span>preview renders</span></div></div>
+</section>
+
+<section class="sec">
+<h2>Four steps to start</h2>
+<p class="intro">Install the packs you need once, then append any material whenever you need it.</p>
+<div class="how">
+<div><h3>1. Unzip the pack</h3><p>Unzip the Asset Library file of a pack. Keep its folders together: texture paths are relative.</p></div>
+<div><h3>2. Add the library</h3><p>Edit &rsaquo; Preferences &rsaquo; File Paths &rsaquo; Asset Libraries. Press +, then choose the pack folder.</p></div>
+<div><h3>3. Append, do not link</h3><p>Set the import method to Append (Reuse Data).</p></div>
+<div><h3>4. Drop it on your object</h3><p>Drag a material from the Asset Browser onto any object.</p></div>
+</div>
+</section>
+
+<section class="sec">
+<h2>The packs</h2>
+<p class="intro">Pick a pack to jump to its materials. Each card shows the pack cover and its material count.</p>
+<div class="cards">
+<a href="#candy-sweets"><img loading="lazy" src="img/packs/01.jpg" alt="Candy &amp; Sweets"><b>Candy &amp; Sweets</b><span>37 materials</span></a>
+<a href="#ceramic-glaze"><img loading="lazy" src="img/packs/02.jpg" alt="Ceramic Glaze"><b>Ceramic Glaze</b><span>24 materials</span></a>
+<a href="#chrome"><img loading="lazy" src="img/packs/03.jpg" alt="Chrome"><b>Chrome</b><span>63 materials</span></a>
+<a href="#clay-stop-motion"><img loading="lazy" src="img/packs/04.jpg" alt="Clay Stop-Motion"><b>Clay Stop-Motion</b><span>24 materials</span></a>
+<a href="#concrete-stone"><img loading="lazy" src="img/packs/05.jpg" alt="Concrete &amp; Stone"><b>Concrete &amp; Stone</b><span>37 materials</span></a>
+<a href="#cosmetics-packaging"><img loading="lazy" src="img/packs/06.jpg" alt="Cosmetics &amp; Packaging"><b>Cosmetics &amp; Packaging</b><span>36 materials</span></a>
+<a href="#fluted-glass"><img loading="lazy" src="img/packs/07.jpg" alt="Fluted Glass"><b>Fluted Glass</b><span>22 materials</span></a>
+<a href="#holographic"><img loading="lazy" src="img/packs/08.jpg" alt="Holographic"><b>Holographic</b><span>51 materials</span></a>
+<a href="#inflatable"><img loading="lazy" src="img/packs/09.jpg" alt="Inflatable"><b>Inflatable</b><span>36 materials</span></a>
+<a href="#organic-fabric-abstract"><img loading="lazy" src="img/packs/10.jpg" alt="Organic Fabric Abstract"><b>Organic Fabric Abstract</b><span>69 materials</span></a>
+<a href="#paper-collection"><img loading="lazy" src="img/packs/11.jpg" alt="Paper Collection"><b>Paper Collection</b><span>81 materials</span></a>
+<a href="#riso-print"><img loading="lazy" src="img/packs/12.jpg" alt="Riso Print"><b>Riso Print</b><span>21 materials</span></a>
+<a href="#screens-crt"><img loading="lazy" src="img/packs/13.jpg" alt="Screens &amp; CRT"><b>Screens &amp; CRT</b><span>26 materials</span></a>
+<a href="#shader-pack"><img loading="lazy" src="img/packs/14.jpg" alt="Shader Pack"><b>Shader Pack</b><span>81 materials</span></a>
+<a href="#studio-backdrops"><img loading="lazy" src="img/packs/15.jpg" alt="Studio Backdrops"><b>Studio Backdrops</b><span>34 materials</span></a>
+<a href="#studio-essentials"><img loading="lazy" src="img/packs/16.jpg" alt="Studio Essentials"><b>Studio Essentials</b><span>37 materials</span></a>
+<a href="#toon-npr"><img loading="lazy" src="img/packs/17.jpg" alt="Toon NPR"><b>Toon NPR</b><span>24 materials</span></a>
+<a href="#y2k"><img loading="lazy" src="img/packs/18.jpg" alt="Y2K"><b>Y2K</b><span>62 materials</span></a>
+</div>
+</section>
+
+<section class="sec">
+<h2>Built to be adjusted</h2>
+<ul class="feat">
+<li><b>Shared node groups</b> &ndash; DSP Mapping, DSP Roughness and DSP Height are the same in every pack, so the packs can be mixed.</li>
+<li><b>Built on the pack&rsquo;s own maps</b> &ndash; every material uses the Base Color, Normal, Roughness and Displacement maps of its pack.</li>
+<li><b>Catalogs</b> &ndash; each pack sorts its materials into Asset Browser catalogs by category.</li>
+<li><b>Relative texture paths</b> &ndash; the packs find their textures wherever the folder sits.</li>
+<li><b>Preview on every material</b> &ndash; each material in the Asset Browser has a preview render, and each one is shown on this page.</li>
+</ul>
+</section>
+
+<section class="sec">
+<h2>All materials</h2>
+<p class="intro">Every material of the bundle, grouped by pack and then by category.</p>
+<ul class="nav">
+<li><a href="#candy-sweets">Candy &amp; Sweets</a></li>
+<li><a href="#ceramic-glaze">Ceramic Glaze</a></li>
+<li><a href="#chrome">Chrome</a></li>
+<li><a href="#clay-stop-motion">Clay Stop-Motion</a></li>
+<li><a href="#concrete-stone">Concrete &amp; Stone</a></li>
+<li><a href="#cosmetics-packaging">Cosmetics &amp; Packaging</a></li>
+<li><a href="#fluted-glass">Fluted Glass</a></li>
+<li><a href="#holographic">Holographic</a></li>
+<li><a href="#inflatable">Inflatable</a></li>
+<li><a href="#organic-fabric-abstract">Organic Fabric Abstract</a></li>
+<li><a href="#paper-collection">Paper Collection</a></li>
+<li><a href="#riso-print">Riso Print</a></li>
+<li><a href="#screens-crt">Screens &amp; CRT</a></li>
+<li><a href="#shader-pack">Shader Pack</a></li>
+<li><a href="#studio-backdrops">Studio Backdrops</a></li>
+<li><a href="#studio-essentials">Studio Essentials</a></li>
+<li><a href="#toon-npr">Toon NPR</a></li>
+<li><a href="#y2k">Y2K</a></li>
+</ul>
+<h3 class="pkh" id="candy-sweets">Candy &amp; Sweets<small>37 materials</small></h3>
+<p class="pkd">Categories: Chocolate, Gummy &amp; Jelly, Hard Candy, Icing &amp; Fondant, Lollipop Swirl, Soft &amp; Chewy, Sugar Coated, Wrappers &amp; Foil</p>
+<h4 class="cat">Chocolate</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Chocolate_Drip_Glaze.jpg" alt="DSPK Chocolate Drip Glaze"><span>DSPK Chocolate Drip Glaze</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Cocoa_Dusted_Truffle.jpg" alt="DSPK Cocoa Dusted Truffle"><span>DSPK Cocoa Dusted Truffle</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Dark_Chocolate_Matte.jpg" alt="DSPK Dark Chocolate Matte"><span>DSPK Dark Chocolate Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Milk_Chocolate_Glossy.jpg" alt="DSPK Milk Chocolate Glossy"><span>DSPK Milk Chocolate Glossy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Ruby_Chocolate.jpg" alt="DSPK Ruby Chocolate"><span>DSPK Ruby Chocolate</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_White_Chocolate_Satin.jpg" alt="DSPK White Chocolate Satin"><span>DSPK White Chocolate Satin</span></figure>
+</div>
+<h4 class="cat">Gummy &amp; Jelly</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Bear_Red.jpg" alt="DSPK Gummy Bear Red"><span>DSPK Gummy Bear Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Blueberry_Clear.jpg" alt="DSPK Gummy Blueberry Clear"><span>DSPK Gummy Blueberry Clear</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Cherry_Pink.jpg" alt="DSPK Gummy Cherry Pink"><span>DSPK Gummy Cherry Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Cola_Dark.jpg" alt="DSPK Gummy Cola Dark"><span>DSPK Gummy Cola Dark</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Grape.jpg" alt="DSPK Gummy Grape"><span>DSPK Gummy Grape</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Lemon.jpg" alt="DSPK Gummy Lemon"><span>DSPK Gummy Lemon</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Lime.jpg" alt="DSPK Gummy Lime"><span>DSPK Gummy Lime</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Gummy_Orange.jpg" alt="DSPK Gummy Orange"><span>DSPK Gummy Orange</span></figure>
+</div>
+<h4 class="cat">Hard Candy</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Hard_Candy_Amber.jpg" alt="DSPK Hard Candy Amber"><span>DSPK Hard Candy Amber</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Hard_Candy_Cherry_Clear.jpg" alt="DSPK Hard Candy Cherry Clear"><span>DSPK Hard Candy Cherry Clear</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Hard_Candy_Crackle.jpg" alt="DSPK Hard Candy Crackle"><span>DSPK Hard Candy Crackle</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Hard_Candy_Glitter_Blue.jpg" alt="DSPK Hard Candy Glitter Blue"><span>DSPK Hard Candy Glitter Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Hard_Candy_Mint_Clear.jpg" alt="DSPK Hard Candy Mint Clear"><span>DSPK Hard Candy Mint Clear</span></figure>
+</div>
+<h4 class="cat">Icing &amp; Fondant</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Fondant_Mint.jpg" alt="DSPK Fondant Mint"><span>DSPK Fondant Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Icing_Glaze_Pink.jpg" alt="DSPK Icing Glaze Pink"><span>DSPK Icing Glaze Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Royal_Icing_White.jpg" alt="DSPK Royal Icing White"><span>DSPK Royal Icing White</span></figure>
+</div>
+<h4 class="cat">Lollipop Swirl</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Lollipop_Swirl_Blue_Yellow.jpg" alt="DSPK Lollipop Swirl Blue Yellow"><span>DSPK Lollipop Swirl Blue Yellow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Lollipop_Swirl_Mint_Pink.jpg" alt="DSPK Lollipop Swirl Mint Pink"><span>DSPK Lollipop Swirl Mint Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Lollipop_Swirl_Rainbow.jpg" alt="DSPK Lollipop Swirl Rainbow"><span>DSPK Lollipop Swirl Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Lollipop_Swirl_Red.jpg" alt="DSPK Lollipop Swirl Red"><span>DSPK Lollipop Swirl Red</span></figure>
+</div>
+<h4 class="cat">Soft &amp; Chewy</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Licorice_Black_Glossy.jpg" alt="DSPK Licorice Black Glossy"><span>DSPK Licorice Black Glossy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Marshmallow_Pastel_Pink.jpg" alt="DSPK Marshmallow Pastel Pink"><span>DSPK Marshmallow Pastel Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Toffee_Caramel.jpg" alt="DSPK Toffee Caramel"><span>DSPK Toffee Caramel</span></figure>
+</div>
+<h4 class="cat">Sugar Coated</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Sanding_Sugar_Rainbow.jpg" alt="DSPK Sanding Sugar Rainbow"><span>DSPK Sanding Sugar Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Sugar_Coat_Lemon.jpg" alt="DSPK Sugar Coat Lemon"><span>DSPK Sugar Coat Lemon</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Sugar_Coat_Lilac.jpg" alt="DSPK Sugar Coat Lilac"><span>DSPK Sugar Coat Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Sugar_Coat_Mint.jpg" alt="DSPK Sugar Coat Mint"><span>DSPK Sugar Coat Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Sugar_Coat_Pastel_Pink.jpg" alt="DSPK Sugar Coat Pastel Pink"><span>DSPK Sugar Coat Pastel Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Sugar_Crystal_White.jpg" alt="DSPK Sugar Crystal White"><span>DSPK Sugar Crystal White</span></figure>
+</div>
+<h4 class="cat">Wrappers &amp; Foil</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Candy_Wrapper_Foil_Gold.jpg" alt="DSPK Candy Wrapper Foil Gold"><span>DSPK Candy Wrapper Foil Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/candy-sweets/DSPK_Candy_Wrapper_Foil_Silver.jpg" alt="DSPK Candy Wrapper Foil Silver"><span>DSPK Candy Wrapper Foil Silver</span></figure>
+</div>
+<h3 class="pkh" id="ceramic-glaze">Ceramic Glaze<small>24 materials</small></h3>
+<p class="pkd">Categories: Crackle Glaze, Drip Glaze, Matte &amp; Satin, Porcelain &amp; Celadon, Raku, Speckled Stoneware, Surface &amp; Wear, Terracotta &amp; Bisque</p>
+<h4 class="cat">Crackle Glaze</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Ash_Crackle_Matte.jpg" alt="DSPG Ash Crackle Matte"><span>DSPG Ash Crackle Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Coarse_Crackle_Ivory.jpg" alt="DSPG Coarse Crackle Ivory"><span>DSPG Coarse Crackle Ivory</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Fine_Crackle_Celadon.jpg" alt="DSPG Fine Crackle Celadon"><span>DSPG Fine Crackle Celadon</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Stained_Crackle_Blue.jpg" alt="DSPG Stained Crackle Blue"><span>DSPG Stained Crackle Blue</span></figure>
+</div>
+<h4 class="cat">Drip Glaze</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Cobalt_Drip_over_Clay.jpg" alt="DSPG Cobalt Drip over Clay"><span>DSPG Cobalt Drip over Clay</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Oxblood_Drip_over_Clay.jpg" alt="DSPG Oxblood Drip over Clay"><span>DSPG Oxblood Drip over Clay</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_White_Drip_over_Brown_Clay.jpg" alt="DSPG White Drip over Brown Clay"><span>DSPG White Drip over Brown Clay</span></figure>
+</div>
+<h4 class="cat">Matte &amp; Satin</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Salt_Glaze_Orange_Peel.jpg" alt="DSPG Salt Glaze Orange Peel"><span>DSPG Salt Glaze Orange Peel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Shino.jpg" alt="DSPG Shino"><span>DSPG Shino</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Tenmoku_Iron_Breaks.jpg" alt="DSPG Tenmoku Iron Breaks"><span>DSPG Tenmoku Iron Breaks</span></figure>
+</div>
+<h4 class="cat">Porcelain &amp; Celadon</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Celadon_Pooled_in_Recesses.jpg" alt="DSPG Celadon Pooled in Recesses"><span>DSPG Celadon Pooled in Recesses</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Jun_Blue_Glaze.jpg" alt="DSPG Jun Blue Glaze"><span>DSPG Jun Blue Glaze</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Porcelain_Glossy.jpg" alt="DSPG Porcelain Glossy"><span>DSPG Porcelain Glossy</span></figure>
+</div>
+<h4 class="cat">Raku</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Raku_Black_Copper_Flash.jpg" alt="DSPG Raku Black Copper Flash"><span>DSPG Raku Black Copper Flash</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Raku_Crackled_Ochre.jpg" alt="DSPG Raku Crackled Ochre"><span>DSPG Raku Crackled Ochre</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Raku_Smoke_Pink.jpg" alt="DSPG Raku Smoke Pink"><span>DSPG Raku Smoke Pink</span></figure>
+</div>
+<h4 class="cat">Speckled Stoneware</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Iron_Spot_Brown.jpg" alt="DSPG Iron Spot Brown"><span>DSPG Iron Spot Brown</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Speckled_Blue_Grey.jpg" alt="DSPG Speckled Blue Grey"><span>DSPG Speckled Blue Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Speckled_Oatmeal.jpg" alt="DSPG Speckled Oatmeal"><span>DSPG Speckled Oatmeal</span></figure>
+</div>
+<h4 class="cat">Surface &amp; Wear</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Crawling_Glaze.jpg" alt="DSPG Crawling Glaze"><span>DSPG Crawling Glaze</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Two-Tone_Dipped.jpg" alt="DSPG Two-Tone Dipped"><span>DSPG Two-Tone Dipped</span></figure>
+</div>
+<h4 class="cat">Terracotta &amp; Bisque</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Bisque_Matte.jpg" alt="DSPG Bisque Matte"><span>DSPG Bisque Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Matte_Terracotta_Tool_Rings.jpg" alt="DSPG Matte Terracotta Tool Rings"><span>DSPG Matte Terracotta Tool Rings</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/ceramic-glaze/DSPG_Terracotta_Raw.jpg" alt="DSPG Terracotta Raw"><span>DSPG Terracotta Raw</span></figure>
+</div>
+<h3 class="pkh" id="chrome">Chrome<small>63 materials</small></h3>
+<p class="pkd">Categories: Brushed &amp; Satin, Chrome Coat, Coloured Chrome, Crumpled Foil, Hammered &amp; Cast, Heat-Tinted &amp; Anodized, Liquid Chrome, Machined &amp; Greeble, Mirror Chrome</p>
+<h4 class="cat">Brushed &amp; Satin</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Brushed_Aluminium.jpg" alt="DSPC Brushed Aluminium"><span>DSPC Brushed Aluminium</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Brushed_Black_Steel.jpg" alt="DSPC Brushed Black Steel"><span>DSPC Brushed Black Steel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Brushed_Copper.jpg" alt="DSPC Brushed Copper"><span>DSPC Brushed Copper</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Brushed_Gold.jpg" alt="DSPC Brushed Gold"><span>DSPC Brushed Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Brushed_Rose_Gold.jpg" alt="DSPC Brushed Rose Gold"><span>DSPC Brushed Rose Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Brushed_Steel.jpg" alt="DSPC Brushed Steel"><span>DSPC Brushed Steel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Buffed_Swirl_Chrome.jpg" alt="DSPC Buffed Swirl Chrome"><span>DSPC Buffed Swirl Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Satin_Nickel_Vertical.jpg" alt="DSPC Satin Nickel Vertical"><span>DSPC Satin Nickel Vertical</span></figure>
+</div>
+<h4 class="cat">Chrome Coat</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Blue.jpg" alt="DSPC Candy Blue"><span>DSPC Candy Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Gold_Lacquer.jpg" alt="DSPC Candy Gold Lacquer"><span>DSPC Candy Gold Lacquer</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Green.jpg" alt="DSPC Candy Green"><span>DSPC Candy Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Orange.jpg" alt="DSPC Candy Orange"><span>DSPC Candy Orange</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Pink.jpg" alt="DSPC Candy Pink"><span>DSPC Candy Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Purple.jpg" alt="DSPC Candy Purple"><span>DSPC Candy Purple</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Red.jpg" alt="DSPC Candy Red"><span>DSPC Candy Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Candy_Teal.jpg" alt="DSPC Candy Teal"><span>DSPC Candy Teal</span></figure>
+</div>
+<h4 class="cat">Coloured Chrome</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Black_Chrome.jpg" alt="DSPC Black Chrome"><span>DSPC Black Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Copper_Chrome.jpg" alt="DSPC Copper Chrome"><span>DSPC Copper Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Gold_Chrome.jpg" alt="DSPC Gold Chrome"><span>DSPC Gold Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Gunmetal_Chrome.jpg" alt="DSPC Gunmetal Chrome"><span>DSPC Gunmetal Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Pastel_Blue_Chrome.jpg" alt="DSPC Pastel Blue Chrome"><span>DSPC Pastel Blue Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Pastel_Lilac_Chrome.jpg" alt="DSPC Pastel Lilac Chrome"><span>DSPC Pastel Lilac Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Pastel_Mint_Chrome.jpg" alt="DSPC Pastel Mint Chrome"><span>DSPC Pastel Mint Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Pastel_Pink_Chrome.jpg" alt="DSPC Pastel Pink Chrome"><span>DSPC Pastel Pink Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Rose_Gold_Chrome.jpg" alt="DSPC Rose Gold Chrome"><span>DSPC Rose Gold Chrome</span></figure>
+</div>
+<h4 class="cat">Crumpled Foil</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Foil_Blue.jpg" alt="DSPC Foil Blue"><span>DSPC Foil Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Foil_Copper.jpg" alt="DSPC Foil Copper"><span>DSPC Foil Copper</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Foil_Gold.jpg" alt="DSPC Foil Gold"><span>DSPC Foil Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Foil_Green.jpg" alt="DSPC Foil Green"><span>DSPC Foil Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Foil_Holographic.jpg" alt="DSPC Foil Holographic"><span>DSPC Foil Holographic</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Foil_Pink.jpg" alt="DSPC Foil Pink"><span>DSPC Foil Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Foil_Silver.jpg" alt="DSPC Foil Silver"><span>DSPC Foil Silver</span></figure>
+</div>
+<h4 class="cat">Hammered &amp; Cast</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Cast_Aluminium.jpg" alt="DSPC Cast Aluminium"><span>DSPC Cast Aluminium</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Cast_Iron_Dark.jpg" alt="DSPC Cast Iron Dark"><span>DSPC Cast Iron Dark</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Deep_Dimple_Chrome.jpg" alt="DSPC Deep Dimple Chrome"><span>DSPC Deep Dimple Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Hammered_Chrome.jpg" alt="DSPC Hammered Chrome"><span>DSPC Hammered Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Hammered_Copper.jpg" alt="DSPC Hammered Copper"><span>DSPC Hammered Copper</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Hammered_Gold.jpg" alt="DSPC Hammered Gold"><span>DSPC Hammered Gold</span></figure>
+</div>
+<h4 class="cat">Heat-Tinted &amp; Anodized</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Brushed_Heat_Titanium.jpg" alt="DSPC Brushed Heat Titanium"><span>DSPC Brushed Heat Titanium</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Heat_Tint_Blue_Purple.jpg" alt="DSPC Heat Tint Blue Purple"><span>DSPC Heat Tint Blue Purple</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Heat_Tint_Gold_Bands.jpg" alt="DSPC Heat Tint Gold Bands"><span>DSPC Heat Tint Gold Bands</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Oil_Slick_Steel_Dark.jpg" alt="DSPC Oil Slick Steel Dark"><span>DSPC Oil Slick Steel Dark</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Oil_Slick_Titanium.jpg" alt="DSPC Oil Slick Titanium"><span>DSPC Oil Slick Titanium</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Rainbow_Anodized.jpg" alt="DSPC Rainbow Anodized"><span>DSPC Rainbow Anodized</span></figure>
+</div>
+<h4 class="cat">Liquid Chrome</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Liquid_Chrome_Blue_Tint.jpg" alt="DSPC Liquid Chrome Blue Tint"><span>DSPC Liquid Chrome Blue Tint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Liquid_Chrome_Gold.jpg" alt="DSPC Liquid Chrome Gold"><span>DSPC Liquid Chrome Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Liquid_Chrome_Ripple_Fine.jpg" alt="DSPC Liquid Chrome Ripple Fine"><span>DSPC Liquid Chrome Ripple Fine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Liquid_Chrome_Rose.jpg" alt="DSPC Liquid Chrome Rose"><span>DSPC Liquid Chrome Rose</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Liquid_Chrome_Silver.jpg" alt="DSPC Liquid Chrome Silver"><span>DSPC Liquid Chrome Silver</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Liquid_Mercury_Dark.jpg" alt="DSPC Liquid Mercury Dark"><span>DSPC Liquid Mercury Dark</span></figure>
+</div>
+<h4 class="cat">Machined &amp; Greeble</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Greeble_Black_Chrome.jpg" alt="DSPC Greeble Black Chrome"><span>DSPC Greeble Black Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Greeble_Chrome_A.jpg" alt="DSPC Greeble Chrome A"><span>DSPC Greeble Chrome A</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Greeble_Chrome_B.jpg" alt="DSPC Greeble Chrome B"><span>DSPC Greeble Chrome B</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Greeble_Gold.jpg" alt="DSPC Greeble Gold"><span>DSPC Greeble Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Greeble_Gunmetal.jpg" alt="DSPC Greeble Gunmetal"><span>DSPC Greeble Gunmetal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Greeble_Steel_Panels.jpg" alt="DSPC Greeble Steel Panels"><span>DSPC Greeble Steel Panels</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Relief_Chrome.jpg" alt="DSPC Relief Chrome"><span>DSPC Relief Chrome</span></figure>
+</div>
+<h4 class="cat">Mirror Chrome</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Mirror_Dusty.jpg" alt="DSPC Mirror Dusty"><span>DSPC Mirror Dusty</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Mirror_Fingerprinted.jpg" alt="DSPC Mirror Fingerprinted"><span>DSPC Mirror Fingerprinted</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Mirror_Mottled_Aged.jpg" alt="DSPC Mirror Mottled Aged"><span>DSPC Mirror Mottled Aged</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Mirror_Perfect.jpg" alt="DSPC Mirror Perfect"><span>DSPC Mirror Perfect</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Mirror_Scratched.jpg" alt="DSPC Mirror Scratched"><span>DSPC Mirror Scratched</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/chrome/DSPC_Mirror_Slightly_Smudged.jpg" alt="DSPC Mirror Slightly Smudged"><span>DSPC Mirror Slightly Smudged</span></figure>
+</div>
+<h3 class="pkh" id="clay-stop-motion">Clay Stop-Motion<small>24 materials</small></h3>
+<p class="pkd">Categories: Fingerprinted, Marbled Mixes, Neutral Clay, Plasticine Primaries, Plasticine Secondaries, Satin Sheen, Tool Marks &amp; Sculpting, Worn &amp; Dusty</p>
+<h4 class="cat">Fingerprinted</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Fingerprinted_Charcoal.jpg" alt="DSPM Fingerprinted Charcoal"><span>DSPM Fingerprinted Charcoal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Fingerprinted_Lilac.jpg" alt="DSPM Fingerprinted Lilac"><span>DSPM Fingerprinted Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Fingerprinted_Sky.jpg" alt="DSPM Fingerprinted Sky"><span>DSPM Fingerprinted Sky</span></figure>
+</div>
+<h4 class="cat">Marbled Mixes</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Marbled_Pink_Purple.jpg" alt="DSPM Marbled Pink Purple"><span>DSPM Marbled Pink Purple</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Marbled_Red_Blue.jpg" alt="DSPM Marbled Red Blue"><span>DSPM Marbled Red Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Marbled_Yellow_Green.jpg" alt="DSPM Marbled Yellow Green"><span>DSPM Marbled Yellow Green</span></figure>
+</div>
+<h4 class="cat">Neutral Clay</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Dark_Skin_Clay.jpg" alt="DSPM Dark Skin Clay"><span>DSPM Dark Skin Clay</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Skin_Tone_Clay.jpg" alt="DSPM Skin Tone Clay"><span>DSPM Skin Tone Clay</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_White_Clay.jpg" alt="DSPM White Clay"><span>DSPM White Clay</span></figure>
+</div>
+<h4 class="cat">Plasticine Primaries</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Blue_Plasticine.jpg" alt="DSPM Blue Plasticine"><span>DSPM Blue Plasticine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Green_Plasticine.jpg" alt="DSPM Green Plasticine"><span>DSPM Green Plasticine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Red_Plasticine.jpg" alt="DSPM Red Plasticine"><span>DSPM Red Plasticine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Yellow_Plasticine.jpg" alt="DSPM Yellow Plasticine"><span>DSPM Yellow Plasticine</span></figure>
+</div>
+<h4 class="cat">Plasticine Secondaries</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Orange_Plasticine.jpg" alt="DSPM Orange Plasticine"><span>DSPM Orange Plasticine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Purple_Plasticine.jpg" alt="DSPM Purple Plasticine"><span>DSPM Purple Plasticine</span></figure>
+</div>
+<h4 class="cat">Satin Sheen</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Satin_Pastel_Green.jpg" alt="DSPM Satin Pastel Green"><span>DSPM Satin Pastel Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Waxy_Cream_Clay.jpg" alt="DSPM Waxy Cream Clay"><span>DSPM Waxy Cream Clay</span></figure>
+</div>
+<h4 class="cat">Tool Marks &amp; Sculpting</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Ball_Tool_Dimples_Yellow.jpg" alt="DSPM Ball Tool Dimples Yellow"><span>DSPM Ball Tool Dimples Yellow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Ridge_Sculpt_Pink.jpg" alt="DSPM Ridge Sculpt Pink"><span>DSPM Ridge Sculpt Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Rolled_Snake_Green.jpg" alt="DSPM Rolled Snake Green"><span>DSPM Rolled Snake Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Spatula_Scrape_Teal.jpg" alt="DSPM Spatula Scrape Teal"><span>DSPM Spatula Scrape Teal</span></figure>
+</div>
+<h4 class="cat">Worn &amp; Dusty</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Dusty_Grey_Clay.jpg" alt="DSPM Dusty Grey Clay"><span>DSPM Dusty Grey Clay</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Ochre_Handled_Clay.jpg" alt="DSPM Ochre Handled Clay"><span>DSPM Ochre Handled Clay</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/clay-stop-motion/DSPM_Worn_Edge_Red.jpg" alt="DSPM Worn Edge Red"><span>DSPM Worn Edge Red</span></figure>
+</div>
+<h3 class="pkh" id="concrete-stone">Concrete &amp; Stone<small>37 materials</small></h3>
+<p class="pkd">Categories: Board-Formed Concrete, Marble, Plaster &amp; Render, Polished &amp; Sealed Concrete, Slate &amp; Basalt, Terrazzo, Travertine</p>
+<h4 class="cat">Board-Formed Concrete</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Board-Formed_Dark.jpg" alt="DSPS Board-Formed Dark"><span>DSPS Board-Formed Dark</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Board-Formed_Grey.jpg" alt="DSPS Board-Formed Grey"><span>DSPS Board-Formed Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Board-Formed_Light.jpg" alt="DSPS Board-Formed Light"><span>DSPS Board-Formed Light</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Board-Formed_Weathered.jpg" alt="DSPS Board-Formed Weathered"><span>DSPS Board-Formed Weathered</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Bugholed_Concrete.jpg" alt="DSPS Bugholed Concrete"><span>DSPS Bugholed Concrete</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Tie-Hole_Panel.jpg" alt="DSPS Tie-Hole Panel"><span>DSPS Tie-Hole Panel</span></figure>
+</div>
+<h4 class="cat">Marble</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Marble_Calacatta.jpg" alt="DSPS Marble Calacatta"><span>DSPS Marble Calacatta</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Marble_Carrara.jpg" alt="DSPS Marble Carrara"><span>DSPS Marble Carrara</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Marble_Honed_Carrara.jpg" alt="DSPS Marble Honed Carrara"><span>DSPS Marble Honed Carrara</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Marble_Nero_Marquina.jpg" alt="DSPS Marble Nero Marquina"><span>DSPS Marble Nero Marquina</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Marble_Rosa.jpg" alt="DSPS Marble Rosa"><span>DSPS Marble Rosa</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Marble_Verde.jpg" alt="DSPS Marble Verde"><span>DSPS Marble Verde</span></figure>
+</div>
+<h4 class="cat">Plaster &amp; Render</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Clay_Render_Cool.jpg" alt="DSPS Clay Render Cool"><span>DSPS Clay Render Cool</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Coarse_Sand_Render.jpg" alt="DSPS Coarse Sand Render"><span>DSPS Coarse Sand Render</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Lime_Plaster.jpg" alt="DSPS Lime Plaster"><span>DSPS Lime Plaster</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Stucco_Dark.jpg" alt="DSPS Stucco Dark"><span>DSPS Stucco Dark</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Trowelled_Render_Warm.jpg" alt="DSPS Trowelled Render Warm"><span>DSPS Trowelled Render Warm</span></figure>
+</div>
+<h4 class="cat">Polished &amp; Sealed Concrete</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Burnished_Dark_Concrete.jpg" alt="DSPS Burnished Dark Concrete"><span>DSPS Burnished Dark Concrete</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Cast_Concrete_Cool.jpg" alt="DSPS Cast Concrete Cool"><span>DSPS Cast Concrete Cool</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Polished_Concrete_Grey.jpg" alt="DSPS Polished Concrete Grey"><span>DSPS Polished Concrete Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Polished_Concrete_Warm.jpg" alt="DSPS Polished Concrete Warm"><span>DSPS Polished Concrete Warm</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Sealed_White_Concrete.jpg" alt="DSPS Sealed White Concrete"><span>DSPS Sealed White Concrete</span></figure>
+</div>
+<h4 class="cat">Slate &amp; Basalt</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Basalt_Split.jpg" alt="DSPS Basalt Split"><span>DSPS Basalt Split</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Bluestone_Sawn.jpg" alt="DSPS Bluestone Sawn"><span>DSPS Bluestone Sawn</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Polished_Black_Stone.jpg" alt="DSPS Polished Black Stone"><span>DSPS Polished Black Stone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Riven_Slate.jpg" alt="DSPS Riven Slate"><span>DSPS Riven Slate</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Slate_Honed.jpg" alt="DSPS Slate Honed"><span>DSPS Slate Honed</span></figure>
+</div>
+<h4 class="cat">Terrazzo</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Terrazzo_Black_and_White.jpg" alt="DSPS Terrazzo Black and White"><span>DSPS Terrazzo Black and White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Terrazzo_Classic.jpg" alt="DSPS Terrazzo Classic"><span>DSPS Terrazzo Classic</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Terrazzo_Dark_Matrix.jpg" alt="DSPS Terrazzo Dark Matrix"><span>DSPS Terrazzo Dark Matrix</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Terrazzo_Exposed_Grit.jpg" alt="DSPS Terrazzo Exposed Grit"><span>DSPS Terrazzo Exposed Grit</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Terrazzo_Pastel.jpg" alt="DSPS Terrazzo Pastel"><span>DSPS Terrazzo Pastel</span></figure>
+</div>
+<h4 class="cat">Travertine</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Travertine_Filled.jpg" alt="DSPS Travertine Filled"><span>DSPS Travertine Filled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Travertine_Honed.jpg" alt="DSPS Travertine Honed"><span>DSPS Travertine Honed</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Travertine_Rustic.jpg" alt="DSPS Travertine Rustic"><span>DSPS Travertine Rustic</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Travertine_Silver.jpg" alt="DSPS Travertine Silver"><span>DSPS Travertine Silver</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/concrete-stone/DSPS_Travertine_Tumbled.jpg" alt="DSPS Travertine Tumbled"><span>DSPS Travertine Tumbled</span></figure>
+</div>
+<h3 class="pkh" id="cosmetics-packaging">Cosmetics &amp; Packaging<small>36 materials</small></h3>
+<p class="pkd">Categories: Frosted &amp; Satin Glass, Gloss Lacquer, Metal Caps, Paper &amp; Board, Pearl &amp; Shimmer, Soft-Touch &amp; Matte</p>
+<h4 class="cat">Frosted &amp; Satin Glass</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Frosted_Jar_Amber.jpg" alt="DSPP Frosted Jar Amber"><span>DSPP Frosted Jar Amber</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Frosted_Jar_Clear.jpg" alt="DSPP Frosted Jar Clear"><span>DSPP Frosted Jar Clear</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Milky_Opal_Glass.jpg" alt="DSPP Milky Opal Glass"><span>DSPP Milky Opal Glass</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Ribbed_Frosted_Bottle.jpg" alt="DSPP Ribbed Frosted Bottle"><span>DSPP Ribbed Frosted Bottle</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Satin_Glass_Rose.jpg" alt="DSPP Satin Glass Rose"><span>DSPP Satin Glass Rose</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Tinted_Frosted_Blue.jpg" alt="DSPP Tinted Frosted Blue"><span>DSPP Tinted Frosted Blue</span></figure>
+</div>
+<h4 class="cat">Gloss Lacquer</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Gloss_Compact_Pink.jpg" alt="DSPP Gloss Compact Pink"><span>DSPP Gloss Compact Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Glossy_Red_Lacquer.jpg" alt="DSPP Glossy Red Lacquer"><span>DSPP Glossy Red Lacquer</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Piano_Black_Lacquer.jpg" alt="DSPP Piano Black Lacquer"><span>DSPP Piano Black Lacquer</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_UV_Spot_Varnish.jpg" alt="DSPP UV Spot Varnish"><span>DSPP UV Spot Varnish</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Wet_Look_Teal.jpg" alt="DSPP Wet Look Teal"><span>DSPP Wet Look Teal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_White_Gloss_Enamel.jpg" alt="DSPP White Gloss Enamel"><span>DSPP White Gloss Enamel</span></figure>
+</div>
+<h4 class="cat">Metal Caps</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Anodized_Cap_Black.jpg" alt="DSPP Anodized Cap Black"><span>DSPP Anodized Cap Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Anodized_Cap_Rose.jpg" alt="DSPP Anodized Cap Rose"><span>DSPP Anodized Cap Rose</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Brushed_Steel_Cap.jpg" alt="DSPP Brushed Steel Cap"><span>DSPP Brushed Steel Cap</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Hot_Foil_Gold_Stamp.jpg" alt="DSPP Hot Foil Gold Stamp"><span>DSPP Hot Foil Gold Stamp</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Knurled_Gunmetal_Cap.jpg" alt="DSPP Knurled Gunmetal Cap"><span>DSPP Knurled Gunmetal Cap</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Polished_Gold_Cap.jpg" alt="DSPP Polished Gold Cap"><span>DSPP Polished Gold Cap</span></figure>
+</div>
+<h4 class="cat">Paper &amp; Board</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Embossed_Cream_Paper.jpg" alt="DSPP Embossed Cream Paper"><span>DSPP Embossed Cream Paper</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Glued_Poster_Shadow.jpg" alt="DSPP Glued Poster Shadow"><span>DSPP Glued Poster Shadow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Glued_Poster_White.jpg" alt="DSPP Glued Poster White"><span>DSPP Glued Poster White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Kraft_Board_Carton.jpg" alt="DSPP Kraft Board Carton"><span>DSPP Kraft Board Carton</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Printed_Carton_Gloss_Spot.jpg" alt="DSPP Printed Carton Gloss Spot"><span>DSPP Printed Carton Gloss Spot</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Recycled_Grey_Board.jpg" alt="DSPP Recycled Grey Board"><span>DSPP Recycled Grey Board</span></figure>
+</div>
+<h4 class="cat">Pearl &amp; Shimmer</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Holo_Pearl_Compact.jpg" alt="DSPP Holo Pearl Compact"><span>DSPP Holo Pearl Compact</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Mother_of_Pearl_Lid.jpg" alt="DSPP Mother of Pearl Lid"><span>DSPP Mother of Pearl Lid</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Pearl_Bronze_Shimmer.jpg" alt="DSPP Pearl Bronze Shimmer"><span>DSPP Pearl Bronze Shimmer</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Pearl_Lipstick_Champagne.jpg" alt="DSPP Pearl Lipstick Champagne"><span>DSPP Pearl Lipstick Champagne</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Pearl_Lipstick_Rose.jpg" alt="DSPP Pearl Lipstick Rose"><span>DSPP Pearl Lipstick Rose</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Shimmer_Gold_Pan.jpg" alt="DSPP Shimmer Gold Pan"><span>DSPP Shimmer Gold Pan</span></figure>
+</div>
+<h4 class="cat">Soft-Touch &amp; Matte</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Matte_Rubber_Grip.jpg" alt="DSPP Matte Rubber Grip"><span>DSPP Matte Rubber Grip</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Matte_Silicone_Cap.jpg" alt="DSPP Matte Silicone Cap"><span>DSPP Matte Silicone Cap</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Soft-Touch_Mint.jpg" alt="DSPP Soft-Touch Mint"><span>DSPP Soft-Touch Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Soft-Touch_Tube_Black.jpg" alt="DSPP Soft-Touch Tube Black"><span>DSPP Soft-Touch Tube Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Soft-Touch_Tube_Sand.jpg" alt="DSPP Soft-Touch Tube Sand"><span>DSPP Soft-Touch Tube Sand</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/cosmetics-packaging/DSPP_Velvet_Matte_Blush.jpg" alt="DSPP Velvet Matte Blush"><span>DSPP Velvet Matte Blush</span></figure>
+</div>
+<h3 class="pkh" id="fluted-glass">Fluted Glass<small>22 materials</small></h3>
+<p class="pkd">Categories: Cathedral &amp; Hammered, Fluted &amp; Reeded, Frosted &amp; Satin, Tinted &amp; Special, Wired &amp; Block</p>
+<h4 class="cat">Cathedral &amp; Hammered</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Cathedral_Rolled.jpg" alt="DSPF Cathedral Rolled"><span>DSPF Cathedral Rolled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Hammered_Antique.jpg" alt="DSPF Hammered Antique"><span>DSPF Hammered Antique</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Hammered_Displaced.jpg" alt="DSPF Hammered Displaced"><span>DSPF Hammered Displaced</span></figure>
+</div>
+<h4 class="cat">Fluted &amp; Reeded</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Bronze.jpg" alt="DSPF Fluted Bronze"><span>DSPF Fluted Bronze</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Crosshatch.jpg" alt="DSPF Fluted Crosshatch"><span>DSPF Fluted Crosshatch</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Green.jpg" alt="DSPF Fluted Green"><span>DSPF Fluted Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Grey_Privacy.jpg" alt="DSPF Fluted Grey Privacy"><span>DSPF Fluted Grey Privacy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Horizontal_Wide.jpg" alt="DSPF Fluted Horizontal Wide"><span>DSPF Fluted Horizontal Wide</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Sawtooth_Prism.jpg" alt="DSPF Fluted Sawtooth Prism"><span>DSPF Fluted Sawtooth Prism</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Vertical_Clear.jpg" alt="DSPF Fluted Vertical Clear"><span>DSPF Fluted Vertical Clear</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Vertical_Narrow.jpg" alt="DSPF Fluted Vertical Narrow"><span>DSPF Fluted Vertical Narrow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Fluted_Wide_Satin.jpg" alt="DSPF Fluted Wide Satin"><span>DSPF Fluted Wide Satin</span></figure>
+</div>
+<h4 class="cat">Frosted &amp; Satin</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Frosted_Clear_Bands.jpg" alt="DSPF Frosted Clear Bands"><span>DSPF Frosted Clear Bands</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Opal_Frost.jpg" alt="DSPF Opal Frost"><span>DSPF Opal Frost</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Sandblasted.jpg" alt="DSPF Sandblasted"><span>DSPF Sandblasted</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Satin_Etch_Gradient.jpg" alt="DSPF Satin Etch Gradient"><span>DSPF Satin Etch Gradient</span></figure>
+</div>
+<h4 class="cat">Tinted &amp; Special</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Dichroic_Accent.jpg" alt="DSPF Dichroic Accent"><span>DSPF Dichroic Accent</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Ice_Glass.jpg" alt="DSPF Ice Glass"><span>DSPF Ice Glass</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Seeded_Bubble.jpg" alt="DSPF Seeded Bubble"><span>DSPF Seeded Bubble</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Tint_Blue_Architectural.jpg" alt="DSPF Tint Blue Architectural"><span>DSPF Tint Blue Architectural</span></figure>
+</div>
+<h4 class="cat">Wired &amp; Block</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Glass_Block.jpg" alt="DSPF Glass Block"><span>DSPF Glass Block</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/fluted-glass/DSPF_Wired_Glass.jpg" alt="DSPF Wired Glass"><span>DSPF Wired Glass</span></figure>
+</div>
+<h3 class="pkh" id="holographic">Holographic<small>51 materials</small></h3>
+<p class="pkd">Categories: Dichroic Glass, Holo Emissive, Holo Foil, Holo Plastic, Holo Sticker &amp; Prism, Holo Tech, Iridescent Film, Pearlescent</p>
+<h4 class="cat">Dichroic Glass</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Dichroic_Fire.jpg" alt="DSPH Dichroic Fire"><span>DSPH Dichroic Fire</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Dichroic_Frosted.jpg" alt="DSPH Dichroic Frosted"><span>DSPH Dichroic Frosted</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Dichroic_Magenta_Gold.jpg" alt="DSPH Dichroic Magenta Gold"><span>DSPH Dichroic Magenta Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Dichroic_Rainbow_Wide.jpg" alt="DSPH Dichroic Rainbow Wide"><span>DSPH Dichroic Rainbow Wide</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Dichroic_Teal_Blue.jpg" alt="DSPH Dichroic Teal Blue"><span>DSPH Dichroic Teal Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Dichroic_Violet_Green.jpg" alt="DSPH Dichroic Violet Green"><span>DSPH Dichroic Violet Green</span></figure>
+</div>
+<h4 class="cat">Holo Emissive</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Glow_Film_Burn.jpg" alt="DSPH Glow Film Burn"><span>DSPH Glow Film Burn</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Glow_Fresnel_Edge.jpg" alt="DSPH Glow Fresnel Edge"><span>DSPH Glow Fresnel Edge</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Glow_Light_Leak.jpg" alt="DSPH Glow Light Leak"><span>DSPH Glow Light Leak</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Glow_Neon_Streak.jpg" alt="DSPH Glow Neon Streak"><span>DSPH Glow Neon Streak</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Glow_Plasma_Spectrum.jpg" alt="DSPH Glow Plasma Spectrum"><span>DSPH Glow Plasma Spectrum</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Glow_Prism_Flare.jpg" alt="DSPH Glow Prism Flare"><span>DSPH Glow Prism Flare</span></figure>
+</div>
+<h4 class="cat">Holo Foil</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Foil_Black.jpg" alt="DSPH Foil Black"><span>DSPH Foil Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Foil_Gold.jpg" alt="DSPH Foil Gold"><span>DSPH Foil Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Foil_Ice_Blue.jpg" alt="DSPH Foil Ice Blue"><span>DSPH Foil Ice Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Foil_Pastel.jpg" alt="DSPH Foil Pastel"><span>DSPH Foil Pastel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Foil_Rainbow.jpg" alt="DSPH Foil Rainbow"><span>DSPH Foil Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Foil_Rose.jpg" alt="DSPH Foil Rose"><span>DSPH Foil Rose</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Foil_Silver.jpg" alt="DSPH Foil Silver"><span>DSPH Foil Silver</span></figure>
+</div>
+<h4 class="cat">Holo Plastic</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Plastic_Black.jpg" alt="DSPH Plastic Black"><span>DSPH Plastic Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Plastic_Blue.jpg" alt="DSPH Plastic Blue"><span>DSPH Plastic Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Plastic_Lilac.jpg" alt="DSPH Plastic Lilac"><span>DSPH Plastic Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Plastic_Mint.jpg" alt="DSPH Plastic Mint"><span>DSPH Plastic Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Plastic_Pink.jpg" alt="DSPH Plastic Pink"><span>DSPH Plastic Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Plastic_White.jpg" alt="DSPH Plastic White"><span>DSPH Plastic White</span></figure>
+</div>
+<h4 class="cat">Holo Sticker &amp; Prism</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Sticker_Diffraction_Grating.jpg" alt="DSPH Sticker Diffraction Grating"><span>DSPH Sticker Diffraction Grating</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Sticker_Glitter_Holo.jpg" alt="DSPH Sticker Glitter Holo"><span>DSPH Sticker Glitter Holo</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Sticker_Prism_Facets.jpg" alt="DSPH Sticker Prism Facets"><span>DSPH Sticker Prism Facets</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Sticker_Prism_Streak.jpg" alt="DSPH Sticker Prism Streak"><span>DSPH Sticker Prism Streak</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Sticker_Rainbow.jpg" alt="DSPH Sticker Rainbow"><span>DSPH Sticker Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Sticker_Wave_Rainbow.jpg" alt="DSPH Sticker Wave Rainbow"><span>DSPH Sticker Wave Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Sticker_Zebra_Holo.jpg" alt="DSPH Sticker Zebra Holo"><span>DSPH Sticker Zebra Holo</span></figure>
+</div>
+<h4 class="cat">Holo Tech</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Tech_Greeble_Black.jpg" alt="DSPH Tech Greeble Black"><span>DSPH Tech Greeble Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Tech_Greeble_Cyan.jpg" alt="DSPH Tech Greeble Cyan"><span>DSPH Tech Greeble Cyan</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Tech_Greeble_Gold.jpg" alt="DSPH Tech Greeble Gold"><span>DSPH Tech Greeble Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Tech_Greeble_Magenta.jpg" alt="DSPH Tech Greeble Magenta"><span>DSPH Tech Greeble Magenta</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Tech_Greeble_Silver.jpg" alt="DSPH Tech Greeble Silver"><span>DSPH Tech Greeble Silver</span></figure>
+</div>
+<h4 class="cat">Iridescent Film</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Beetle_Shell.jpg" alt="DSPH Film Beetle Shell"><span>DSPH Film Beetle Shell</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Gunmetal.jpg" alt="DSPH Film Gunmetal"><span>DSPH Film Gunmetal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Heat_Titanium.jpg" alt="DSPH Film Heat Titanium"><span>DSPH Film Heat Titanium</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Marble_Swirl.jpg" alt="DSPH Film Marble Swirl"><span>DSPH Film Marble Swirl</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Oil_Lacquer.jpg" alt="DSPH Film Oil Lacquer"><span>DSPH Film Oil Lacquer</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Oil_Slick.jpg" alt="DSPH Film Oil Slick"><span>DSPH Film Oil Slick</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Pastel_Swirl.jpg" alt="DSPH Film Pastel Swirl"><span>DSPH Film Pastel Swirl</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Petrol_Swirl.jpg" alt="DSPH Film Petrol Swirl"><span>DSPH Film Petrol Swirl</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Film_Soap_Ink.jpg" alt="DSPH Film Soap Ink"><span>DSPH Film Soap Ink</span></figure>
+</div>
+<h4 class="cat">Pearlescent</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Pearl_Abalone.jpg" alt="DSPH Pearl Abalone"><span>DSPH Pearl Abalone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Pearl_Black.jpg" alt="DSPH Pearl Black"><span>DSPH Pearl Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Pearl_Mother_of_Pearl.jpg" alt="DSPH Pearl Mother of Pearl"><span>DSPH Pearl Mother of Pearl</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Pearl_Pink.jpg" alt="DSPH Pearl Pink"><span>DSPH Pearl Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/holographic/DSPH_Pearl_White.jpg" alt="DSPH Pearl White"><span>DSPH Pearl White</span></figure>
+</div>
+<h3 class="pkh" id="inflatable">Inflatable<small>36 materials</small></h3>
+<p class="pkd">Categories: Glossy PVC, Latex Balloons, Matte Vinyl, Pearl Balloons, Textured Latex, Translucent Pool Toys</p>
+<h4 class="cat">Glossy PVC</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_PVC_Gloss_Black.jpg" alt="DSPI PVC Gloss Black"><span>DSPI PVC Gloss Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_PVC_Gloss_Blue.jpg" alt="DSPI PVC Gloss Blue"><span>DSPI PVC Gloss Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_PVC_Gloss_Red.jpg" alt="DSPI PVC Gloss Red"><span>DSPI PVC Gloss Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_PVC_Gloss_Seam_Green.jpg" alt="DSPI PVC Gloss Seam Green"><span>DSPI PVC Gloss Seam Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_PVC_Gloss_Seam_Orange.jpg" alt="DSPI PVC Gloss Seam Orange"><span>DSPI PVC Gloss Seam Orange</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_PVC_Gloss_White.jpg" alt="DSPI PVC Gloss White"><span>DSPI PVC Gloss White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_PVC_Gloss_Yellow.jpg" alt="DSPI PVC Gloss Yellow"><span>DSPI PVC Gloss Yellow</span></figure>
+</div>
+<h4 class="cat">Latex Balloons</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Chalk_White.jpg" alt="DSPI Latex Balloon Chalk White"><span>DSPI Latex Balloon Chalk White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Cobalt_Blue.jpg" alt="DSPI Latex Balloon Cobalt Blue"><span>DSPI Latex Balloon Cobalt Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Jet_Black.jpg" alt="DSPI Latex Balloon Jet Black"><span>DSPI Latex Balloon Jet Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Lilac.jpg" alt="DSPI Latex Balloon Lilac"><span>DSPI Latex Balloon Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Mint.jpg" alt="DSPI Latex Balloon Mint"><span>DSPI Latex Balloon Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Pastel_Pink.jpg" alt="DSPI Latex Balloon Pastel Pink"><span>DSPI Latex Balloon Pastel Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Red.jpg" alt="DSPI Latex Balloon Red"><span>DSPI Latex Balloon Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Sunny_Yellow.jpg" alt="DSPI Latex Balloon Sunny Yellow"><span>DSPI Latex Balloon Sunny Yellow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Tangerine.jpg" alt="DSPI Latex Balloon Tangerine"><span>DSPI Latex Balloon Tangerine</span></figure>
+</div>
+<h4 class="cat">Matte Vinyl</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Matte_Vinyl_Coral_Grain.jpg" alt="DSPI Matte Vinyl Coral Grain"><span>DSPI Matte Vinyl Coral Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Matte_Vinyl_Navy.jpg" alt="DSPI Matte Vinyl Navy"><span>DSPI Matte Vinyl Navy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Matte_Vinyl_Olive.jpg" alt="DSPI Matte Vinyl Olive"><span>DSPI Matte Vinyl Olive</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Matte_Vinyl_Sand.jpg" alt="DSPI Matte Vinyl Sand"><span>DSPI Matte Vinyl Sand</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Matte_Vinyl_Woven.jpg" alt="DSPI Matte Vinyl Woven"><span>DSPI Matte Vinyl Woven</span></figure>
+</div>
+<h4 class="cat">Pearl Balloons</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pearl_Balloon_Blue_Shift.jpg" alt="DSPI Pearl Balloon Blue Shift"><span>DSPI Pearl Balloon Blue Shift</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pearl_Balloon_Blush.jpg" alt="DSPI Pearl Balloon Blush"><span>DSPI Pearl Balloon Blush</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pearl_Balloon_Champagne_Gold.jpg" alt="DSPI Pearl Balloon Champagne Gold"><span>DSPI Pearl Balloon Champagne Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pearl_Balloon_Lilac_Shift.jpg" alt="DSPI Pearl Balloon Lilac Shift"><span>DSPI Pearl Balloon Lilac Shift</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pearl_Balloon_Mint_Shift.jpg" alt="DSPI Pearl Balloon Mint Shift"><span>DSPI Pearl Balloon Mint Shift</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pearl_Balloon_Silver.jpg" alt="DSPI Pearl Balloon Silver"><span>DSPI Pearl Balloon Silver</span></figure>
+</div>
+<h4 class="cat">Textured Latex</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Creased_Red.jpg" alt="DSPI Latex Balloon Creased Red"><span>DSPI Latex Balloon Creased Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Dusty_Teal.jpg" alt="DSPI Latex Balloon Dusty Teal"><span>DSPI Latex Balloon Dusty Teal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Sanded_Grey.jpg" alt="DSPI Latex Balloon Sanded Grey"><span>DSPI Latex Balloon Sanded Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Latex_Balloon_Wrinkled_Yellow.jpg" alt="DSPI Latex Balloon Wrinkled Yellow"><span>DSPI Latex Balloon Wrinkled Yellow</span></figure>
+</div>
+<h4 class="cat">Translucent Pool Toys</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pool_Toy_Aqua_Translucent.jpg" alt="DSPI Pool Toy Aqua Translucent"><span>DSPI Pool Toy Aqua Translucent</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pool_Toy_Clear_Ice.jpg" alt="DSPI Pool Toy Clear Ice"><span>DSPI Pool Toy Clear Ice</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pool_Toy_Frosted_Green.jpg" alt="DSPI Pool Toy Frosted Green"><span>DSPI Pool Toy Frosted Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pool_Toy_Lemon_Translucent.jpg" alt="DSPI Pool Toy Lemon Translucent"><span>DSPI Pool Toy Lemon Translucent</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/inflatable/DSPI_Pool_Toy_Pink_Translucent.jpg" alt="DSPI Pool Toy Pink Translucent"><span>DSPI Pool Toy Pink Translucent</span></figure>
+</div>
+<h3 class="pkh" id="organic-fabric-abstract">Organic Fabric Abstract<small>69 materials</small></h3>
+<p class="pkd">Categories: Glass &amp; Greeble Ceramic, Iridescent &amp; Liquid, Pattern &amp; Gradient, Fur &amp; Quilted, Knit,  Denim &amp; Canvas, Satin &amp; Terry, Velvet &amp; Felt, Jelly &amp; Gummy, Moss &amp; Foam, Stone &amp; Ceramic, Wax,  Clay &amp; Skin</p>
+<h4 class="cat">Glass &amp; Greeble Ceramic</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Chromatic_Frosted_Glass.jpg" alt="DSPO Chromatic Frosted Glass"><span>DSPO Chromatic Frosted Glass</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Glass_Chromatic_Pink.jpg" alt="DSPO Glass Chromatic Pink"><span>DSPO Glass Chromatic Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Greeble_Ceramic_Cobalt.jpg" alt="DSPO Greeble Ceramic Cobalt"><span>DSPO Greeble Ceramic Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Greeble_Ceramic_Ivory_Coral.jpg" alt="DSPO Greeble Ceramic Ivory Coral"><span>DSPO Greeble Ceramic Ivory Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Greeble_Ceramic_Mint.jpg" alt="DSPO Greeble Ceramic Mint"><span>DSPO Greeble Ceramic Mint</span></figure>
+</div>
+<h4 class="cat">Iridescent &amp; Liquid</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Holographic_Silicone.jpg" alt="DSPO Holographic Silicone"><span>DSPO Holographic Silicone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Iridescent_Velvet.jpg" alt="DSPO Iridescent Velvet"><span>DSPO Iridescent Velvet</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Liquid_Marble_Jelly.jpg" alt="DSPO Liquid Marble Jelly"><span>DSPO Liquid Marble Jelly</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Marble_Velvet_Pastel.jpg" alt="DSPO Marble Velvet Pastel"><span>DSPO Marble Velvet Pastel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Oil_Slick_Rubber.jpg" alt="DSPO Oil Slick Rubber"><span>DSPO Oil Slick Rubber</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Rainbow_Satin.jpg" alt="DSPO Rainbow Satin"><span>DSPO Rainbow Satin</span></figure>
+</div>
+<h4 class="cat">Pattern &amp; Gradient</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Gradient_Clay_Butter_Tangerine.jpg" alt="DSPO Gradient Clay Butter Tangerine"><span>DSPO Gradient Clay Butter Tangerine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Gradient_Clay_Mint_Sky.jpg" alt="DSPO Gradient Clay Mint Sky"><span>DSPO Gradient Clay Mint Sky</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Gradient_Clay_Sunset.jpg" alt="DSPO Gradient Clay Sunset"><span>DSPO Gradient Clay Sunset</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Op-Art_Fabric_Cobalt.jpg" alt="DSPO Op-Art Fabric Cobalt"><span>DSPO Op-Art Fabric Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Op-Art_Fabric_Coral.jpg" alt="DSPO Op-Art Fabric Coral"><span>DSPO Op-Art Fabric Coral</span></figure>
+</div>
+<h4 class="cat">Fur &amp; Quilted</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Faux_Fur_Short_Cream.jpg" alt="DSPO Faux Fur Short Cream"><span>DSPO Faux Fur Short Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Faux_Fur_Short_Lilac.jpg" alt="DSPO Faux Fur Short Lilac"><span>DSPO Faux Fur Short Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Quilted_Bubblegum_Puffy.jpg" alt="DSPO Quilted Bubblegum Puffy"><span>DSPO Quilted Bubblegum Puffy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Quilted_Cream_Diamond.jpg" alt="DSPO Quilted Cream Diamond"><span>DSPO Quilted Cream Diamond</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Quilted_Mint_Diamond.jpg" alt="DSPO Quilted Mint Diamond"><span>DSPO Quilted Mint Diamond</span></figure>
+</div>
+<h4 class="cat">Knit, Denim &amp; Canvas</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Canvas_Cream.jpg" alt="DSPO Canvas Cream"><span>DSPO Canvas Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Canvas_Tangerine.jpg" alt="DSPO Canvas Tangerine"><span>DSPO Canvas Tangerine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Denim_Indigo.jpg" alt="DSPO Denim Indigo"><span>DSPO Denim Indigo</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Wool_Knit_Cobalt.jpg" alt="DSPO Wool Knit Cobalt"><span>DSPO Wool Knit Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Wool_Knit_Coral.jpg" alt="DSPO Wool Knit Coral"><span>DSPO Wool Knit Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Wool_Knit_Cream.jpg" alt="DSPO Wool Knit Cream"><span>DSPO Wool Knit Cream</span></figure>
+</div>
+<h4 class="cat">Satin &amp; Terry</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Satin_Bubblegum.jpg" alt="DSPO Satin Bubblegum"><span>DSPO Satin Bubblegum</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Satin_Butter.jpg" alt="DSPO Satin Butter"><span>DSPO Satin Butter</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Silk_Ink.jpg" alt="DSPO Silk Ink"><span>DSPO Silk Ink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Terry_Towel_Cream.jpg" alt="DSPO Terry Towel Cream"><span>DSPO Terry Towel Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Terry_Towel_Mint.jpg" alt="DSPO Terry Towel Mint"><span>DSPO Terry Towel Mint</span></figure>
+</div>
+<h4 class="cat">Velvet &amp; Felt</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Felt_Butter.jpg" alt="DSPO Felt Butter"><span>DSPO Felt Butter</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Felt_Cream.jpg" alt="DSPO Felt Cream"><span>DSPO Felt Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Felt_Sky.jpg" alt="DSPO Felt Sky"><span>DSPO Felt Sky</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Velvet_Cobalt.jpg" alt="DSPO Velvet Cobalt"><span>DSPO Velvet Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Velvet_Coral.jpg" alt="DSPO Velvet Coral"><span>DSPO Velvet Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Velvet_Lilac.jpg" alt="DSPO Velvet Lilac"><span>DSPO Velvet Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Velvet_Mint.jpg" alt="DSPO Velvet Mint"><span>DSPO Velvet Mint</span></figure>
+</div>
+<h4 class="cat">Jelly &amp; Gummy</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Gummy_Candy_Butter.jpg" alt="DSPO Gummy Candy Butter"><span>DSPO Gummy Candy Butter</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Gummy_Candy_Coral.jpg" alt="DSPO Gummy Candy Coral"><span>DSPO Gummy Candy Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Gummy_Candy_Tangerine.jpg" alt="DSPO Gummy Candy Tangerine"><span>DSPO Gummy Candy Tangerine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Silicone_Jelly_Bubblegum.jpg" alt="DSPO Silicone Jelly Bubblegum"><span>DSPO Silicone Jelly Bubblegum</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Silicone_Jelly_Lilac.jpg" alt="DSPO Silicone Jelly Lilac"><span>DSPO Silicone Jelly Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Silicone_Jelly_Mint.jpg" alt="DSPO Silicone Jelly Mint"><span>DSPO Silicone Jelly Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Silicone_Jelly_Sky.jpg" alt="DSPO Silicone Jelly Sky"><span>DSPO Silicone Jelly Sky</span></figure>
+</div>
+<h4 class="cat">Moss &amp; Foam</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Flock_Butter.jpg" alt="DSPO Flock Butter"><span>DSPO Flock Butter</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Flock_Mint.jpg" alt="DSPO Flock Mint"><span>DSPO Flock Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Foam_Sky.jpg" alt="DSPO Foam Sky"><span>DSPO Foam Sky</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Marshmallow_Pink.jpg" alt="DSPO Marshmallow Pink"><span>DSPO Marshmallow Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Marshmallow_White.jpg" alt="DSPO Marshmallow White"><span>DSPO Marshmallow White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Moss_Flock_Green.jpg" alt="DSPO Moss Flock Green"><span>DSPO Moss Flock Green</span></figure>
+</div>
+<h4 class="cat">Stone &amp; Ceramic</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Ceramic_Glaze_Cobalt.jpg" alt="DSPO Ceramic Glaze Cobalt"><span>DSPO Ceramic Glaze Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Ceramic_Glaze_Coral.jpg" alt="DSPO Ceramic Glaze Coral"><span>DSPO Ceramic Glaze Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Ceramic_Glaze_Cream.jpg" alt="DSPO Ceramic Glaze Cream"><span>DSPO Ceramic Glaze Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Ceramic_Glaze_Mint.jpg" alt="DSPO Ceramic Glaze Mint"><span>DSPO Ceramic Glaze Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Stone_Pebble_Sage.jpg" alt="DSPO Stone Pebble Sage"><span>DSPO Stone Pebble Sage</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Stone_Pebble_Slate.jpg" alt="DSPO Stone Pebble Slate"><span>DSPO Stone Pebble Slate</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Stone_Sandstone_Cream.jpg" alt="DSPO Stone Sandstone Cream"><span>DSPO Stone Sandstone Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Stone_Sandstone_Rose.jpg" alt="DSPO Stone Sandstone Rose"><span>DSPO Stone Sandstone Rose</span></figure>
+</div>
+<h4 class="cat">Wax, Clay &amp; Skin</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Clay_Cobalt.jpg" alt="DSPO Clay Cobalt"><span>DSPO Clay Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Clay_Coral.jpg" alt="DSPO Clay Coral"><span>DSPO Clay Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Clay_Dough_Cream.jpg" alt="DSPO Clay Dough Cream"><span>DSPO Clay Dough Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Clay_Lilac.jpg" alt="DSPO Clay Lilac"><span>DSPO Clay Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Soap_Bar_Mint.jpg" alt="DSPO Soap Bar Mint"><span>DSPO Soap Bar Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Soap_Bar_Pink.jpg" alt="DSPO Soap Bar Pink"><span>DSPO Soap Bar Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Velvet_Blush.jpg" alt="DSPO Velvet Blush"><span>DSPO Velvet Blush</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Velvet_Peach.jpg" alt="DSPO Velvet Peach"><span>DSPO Velvet Peach</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/organic-fabric-abstract/DSPO_Wax_Candle_Cream.jpg" alt="DSPO Wax Candle Cream"><span>DSPO Wax Candle Cream</span></figure>
+</div>
+<h3 class="pkh" id="paper-collection">Paper Collection<small>81 materials</small></h3>
+<p class="pkd">Categories: Colour, Crinkled &amp; Folded, Dark &amp; Black, Poster &amp; Print, Special, Watercolour, White &amp; Cream</p>
+<h4 class="cat">Colour</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Bottle_Green_Matte.jpg" alt="DSPP Bottle Green Matte"><span>DSPP Bottle Green Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Cobalt_Crinkled.jpg" alt="DSPP Cobalt Crinkled"><span>DSPP Cobalt Crinkled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Cobalt_Matte.jpg" alt="DSPP Cobalt Matte"><span>DSPP Cobalt Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Deep_Blue_Matte.jpg" alt="DSPP Deep Blue Matte"><span>DSPP Deep Blue Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Emerald_Matte.jpg" alt="DSPP Emerald Matte"><span>DSPP Emerald Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Forest_Green_Matte.jpg" alt="DSPP Forest Green Matte"><span>DSPP Forest Green Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Grey_Big_Matte.jpg" alt="DSPP Grey Big Matte"><span>DSPP Grey Big Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Grey_Matte.jpg" alt="DSPP Grey Matte"><span>DSPP Grey Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Leaf_Green_Crinkled.jpg" alt="DSPP Leaf Green Crinkled"><span>DSPP Leaf Green Crinkled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Leaf_Green_Matte.jpg" alt="DSPP Leaf Green Matte"><span>DSPP Leaf Green Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Lemon_Crinkled.jpg" alt="DSPP Lemon Crinkled"><span>DSPP Lemon Crinkled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Lemon_Matte.jpg" alt="DSPP Lemon Matte"><span>DSPP Lemon Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Mauve_Matte.jpg" alt="DSPP Mauve Matte"><span>DSPP Mauve Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Mint_Crinkled.jpg" alt="DSPP Mint Crinkled"><span>DSPP Mint Crinkled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Mint_Matte.jpg" alt="DSPP Mint Matte"><span>DSPP Mint Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Mottled_Red_Blue_Matte.jpg" alt="DSPP Mottled Red Blue Matte"><span>DSPP Mottled Red Blue Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Navy_Crinkled.jpg" alt="DSPP Navy Crinkled"><span>DSPP Navy Crinkled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Navy_Matte.jpg" alt="DSPP Navy Matte"><span>DSPP Navy Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Ocean_Blue_Matte.jpg" alt="DSPP Ocean Blue Matte"><span>DSPP Ocean Blue Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Olive_Matte.jpg" alt="DSPP Olive Matte"><span>DSPP Olive Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Pale_Lime_Matte.jpg" alt="DSPP Pale Lime Matte"><span>DSPP Pale Lime Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Red_Crinkled.jpg" alt="DSPP Red Crinkled"><span>DSPP Red Crinkled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Red_Matte.jpg" alt="DSPP Red Matte"><span>DSPP Red Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Scarlet_Matte.jpg" alt="DSPP Scarlet Matte"><span>DSPP Scarlet Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Sky_Blue_Matte.jpg" alt="DSPP Sky Blue Matte"><span>DSPP Sky Blue Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Slate_Blue_Matte.jpg" alt="DSPP Slate Blue Matte"><span>DSPP Slate Blue Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Sun_Yellow_Matte.jpg" alt="DSPP Sun Yellow Matte"><span>DSPP Sun Yellow Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Wine_Matte.jpg" alt="DSPP Wine Matte"><span>DSPP Wine Matte</span></figure>
+</div>
+<h4 class="cat">Crinkled &amp; Folded</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Crinkled_Beauty_Grain.jpg" alt="DSPP Crinkled Beauty Grain"><span>DSPP Crinkled Beauty Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Crinkled_Black.jpg" alt="DSPP Crinkled Black"><span>DSPP Crinkled Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Crinkled_Warm.jpg" alt="DSPP Crinkled Warm"><span>DSPP Crinkled Warm</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Crinkled_White.jpg" alt="DSPP Crinkled White"><span>DSPP Crinkled White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Crumpled_Heavy_Grey.jpg" alt="DSPP Crumpled Heavy Grey"><span>DSPP Crumpled Heavy Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Crumpled_Light_Grey.jpg" alt="DSPP Crumpled Light Grey"><span>DSPP Crumpled Light Grey</span></figure>
+</div>
+<h4 class="cat">Dark &amp; Black</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Black_Matte.jpg" alt="DSPP Black Matte"><span>DSPP Black Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Black_Soft.jpg" alt="DSPP Black Soft"><span>DSPP Black Soft</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Charcoal.jpg" alt="DSPP Charcoal"><span>DSPP Charcoal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Charcoal_Blue.jpg" alt="DSPP Charcoal Blue"><span>DSPP Charcoal Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Dark_Grain.jpg" alt="DSPP Dark Grain"><span>DSPP Dark Grain</span></figure>
+</div>
+<h4 class="cat">Poster &amp; Print</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Glued_Poster_Glossy.jpg" alt="DSPP Glued Poster Glossy"><span>DSPP Glued Poster Glossy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Glued_Poster_Shadow.jpg" alt="DSPP Glued Poster Shadow"><span>DSPP Glued Poster Shadow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Glued_Poster_White.jpg" alt="DSPP Glued Poster White"><span>DSPP Glued Poster White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Light_Leak_Gloss.jpg" alt="DSPP Light Leak Gloss"><span>DSPP Light Leak Gloss</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Light_Leak_Print.jpg" alt="DSPP Light Leak Print"><span>DSPP Light Leak Print</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Rainbow_Streak_Gloss.jpg" alt="DSPP Rainbow Streak Gloss"><span>DSPP Rainbow Streak Gloss</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Rainbow_Streak_Print.jpg" alt="DSPP Rainbow Streak Print"><span>DSPP Rainbow Streak Print</span></figure>
+</div>
+<h4 class="cat">Special</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Backlit_Rose_Wash.jpg" alt="DSPP Backlit Rose Wash"><span>DSPP Backlit Rose Wash</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Cardboard_Dark.jpg" alt="DSPP Cardboard Dark"><span>DSPP Cardboard Dark</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Cardboard_Ochre.jpg" alt="DSPP Cardboard Ochre"><span>DSPP Cardboard Ochre</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Chipboard_Grey.jpg" alt="DSPP Chipboard Grey"><span>DSPP Chipboard Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Felt-Tip_Paper_Coral.jpg" alt="DSPP Felt-Tip Paper Coral"><span>DSPP Felt-Tip Paper Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Felt-Tip_Paper_Yellow.jpg" alt="DSPP Felt-Tip Paper Yellow"><span>DSPP Felt-Tip Paper Yellow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Glossy_Coated_Black.jpg" alt="DSPP Glossy Coated Black"><span>DSPP Glossy Coated Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Glossy_Coated_Blue.jpg" alt="DSPP Glossy Coated Blue"><span>DSPP Glossy Coated Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Glossy_Coated_Red.jpg" alt="DSPP Glossy Coated Red"><span>DSPP Glossy Coated Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Glossy_Photo_White.jpg" alt="DSPP Glossy Photo White"><span>DSPP Glossy Photo White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Sugar_Paper_Blue.jpg" alt="DSPP Sugar Paper Blue"><span>DSPP Sugar Paper Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Sugar_Paper_Green.jpg" alt="DSPP Sugar Paper Green"><span>DSPP Sugar Paper Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Translucent_Red_Lantern.jpg" alt="DSPP Translucent Red Lantern"><span>DSPP Translucent Red Lantern</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Translucent_Warm_Shade.jpg" alt="DSPP Translucent Warm Shade"><span>DSPP Translucent Warm Shade</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Translucent_White_Lamp.jpg" alt="DSPP Translucent White Lamp"><span>DSPP Translucent White Lamp</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Translucent_Yellow.jpg" alt="DSPP Translucent Yellow"><span>DSPP Translucent Yellow</span></figure>
+</div>
+<h4 class="cat">Watercolour</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Blue_Wash.jpg" alt="DSPP Blue Wash"><span>DSPP Blue Wash</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Coral_Wash.jpg" alt="DSPP Coral Wash"><span>DSPP Coral Wash</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Cream_Wash.jpg" alt="DSPP Cream Wash"><span>DSPP Cream Wash</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Ochre_Wash.jpg" alt="DSPP Ochre Wash"><span>DSPP Ochre Wash</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Rose_Wash.jpg" alt="DSPP Rose Wash"><span>DSPP Rose Wash</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Teal_Wash.jpg" alt="DSPP Teal Wash"><span>DSPP Teal Wash</span></figure>
+</div>
+<h4 class="cat">White &amp; Cream</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Beige_Linen.jpg" alt="DSPP Beige Linen"><span>DSPP Beige Linen</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Beige_Sand.jpg" alt="DSPP Beige Sand"><span>DSPP Beige Sand</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Grey_Smooth.jpg" alt="DSPP Grey Smooth"><span>DSPP Grey Smooth</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Light_Grey.jpg" alt="DSPP Light Grey"><span>DSPP Light Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Light_Grey_Fine.jpg" alt="DSPP Light Grey Fine"><span>DSPP Light Grey Fine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_Warm_White.jpg" alt="DSPP Warm White"><span>DSPP Warm White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_White_Bright.jpg" alt="DSPP White Bright"><span>DSPP White Bright</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_White_Clean.jpg" alt="DSPP White Clean"><span>DSPP White Clean</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_White_Fine.jpg" alt="DSPP White Fine"><span>DSPP White Fine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_White_Grain.jpg" alt="DSPP White Grain"><span>DSPP White Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_White_Notes.jpg" alt="DSPP White Notes"><span>DSPP White Notes</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_White_Soft.jpg" alt="DSPP White Soft"><span>DSPP White Soft</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/paper-collection/DSPP_White_Subtle.jpg" alt="DSPP White Subtle"><span>DSPP White Subtle</span></figure>
+</div>
+<h3 class="pkh" id="riso-print">Riso Print<small>21 materials</small></h3>
+<p class="pkd">Categories: Gradient Duotone, Halftone Screens, Line Screens, Misregistration, Overprint, Paper Stock, Stochastic Grain</p>
+<h4 class="cat">Gradient Duotone</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Blue_Pink_Duotone.jpg" alt="DSPR Blue Pink Duotone"><span>DSPR Blue Pink Duotone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Sunrise_Duotone.jpg" alt="DSPR Sunrise Duotone"><span>DSPR Sunrise Duotone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Teal_Fade.jpg" alt="DSPR Teal Fade"><span>DSPR Teal Fade</span></figure>
+</div>
+<h4 class="cat">Halftone Screens</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Federal_Blue_Halftone.jpg" alt="DSPR Federal Blue Halftone"><span>DSPR Federal Blue Halftone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Pink_Halftone.jpg" alt="DSPR Pink Halftone"><span>DSPR Pink Halftone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Teal_Halftone.jpg" alt="DSPR Teal Halftone"><span>DSPR Teal Halftone</span></figure>
+</div>
+<h4 class="cat">Line Screens</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Blue_Line_Screen.jpg" alt="DSPR Blue Line Screen"><span>DSPR Blue Line Screen</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Red_Line_Screen.jpg" alt="DSPR Red Line Screen"><span>DSPR Red Line Screen</span></figure>
+</div>
+<h4 class="cat">Misregistration</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Misreg_Red_Blue_Line.jpg" alt="DSPR Misreg Red Blue Line"><span>DSPR Misreg Red Blue Line</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Misreg_Yellow_Teal.jpg" alt="DSPR Misreg Yellow Teal"><span>DSPR Misreg Yellow Teal</span></figure>
+</div>
+<h4 class="cat">Overprint</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Pink_x_Blue.jpg" alt="DSPR Pink x Blue"><span>DSPR Pink x Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Pink_x_Federal_Blue.jpg" alt="DSPR Pink x Federal Blue"><span>DSPR Pink x Federal Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Red_x_Yellow.jpg" alt="DSPR Red x Yellow"><span>DSPR Red x Yellow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Teal_x_Yellow.jpg" alt="DSPR Teal x Yellow"><span>DSPR Teal x Yellow</span></figure>
+</div>
+<h4 class="cat">Paper Stock</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Cream_Stock.jpg" alt="DSPR Cream Stock"><span>DSPR Cream Stock</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Deboss_Cream.jpg" alt="DSPR Deboss Cream"><span>DSPR Deboss Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Kraft_Stock.jpg" alt="DSPR Kraft Stock"><span>DSPR Kraft Stock</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Pressed_Blue_Ink.jpg" alt="DSPR Pressed Blue Ink"><span>DSPR Pressed Blue Ink</span></figure>
+</div>
+<h4 class="cat">Stochastic Grain</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Federal_Blue_Grain.jpg" alt="DSPR Federal Blue Grain"><span>DSPR Federal Blue Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Pink_Heavy_Grain.jpg" alt="DSPR Pink Heavy Grain"><span>DSPR Pink Heavy Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/riso-print/DSPR_Yellow_Grain.jpg" alt="DSPR Yellow Grain"><span>DSPR Yellow Grain</span></figure>
+</div>
+<h3 class="pkh" id="screens-crt">Screens &amp; CRT<small>26 materials</small></h3>
+<p class="pkd">Categories: CRT Phosphor, Glitch &amp; Signal, Housings &amp; Glass, LCD Panel, LED Matrix, RGB Subpixel</p>
+<h4 class="cat">CRT Phosphor</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_CRT_Aperture_Grille_RGB.jpg" alt="DSPX CRT Aperture Grille RGB"><span>DSPX CRT Aperture Grille RGB</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_CRT_P4_White_Mono.jpg" alt="DSPX CRT P4 White Mono"><span>DSPX CRT P4 White Mono</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_CRT_Shadow_Mask_Dots.jpg" alt="DSPX CRT Shadow Mask Dots"><span>DSPX CRT Shadow Mask Dots</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_CRT_Slot_Mask.jpg" alt="DSPX CRT Slot Mask"><span>DSPX CRT Slot Mask</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Terminal_Amber.jpg" alt="DSPX Terminal Amber"><span>DSPX Terminal Amber</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Terminal_Green.jpg" alt="DSPX Terminal Green"><span>DSPX Terminal Green</span></figure>
+</div>
+<h4 class="cat">Glitch &amp; Signal</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Glitch_Block_Noise_Magenta.jpg" alt="DSPX Glitch Block Noise Magenta"><span>DSPX Glitch Block Noise Magenta</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Glitch_Scan_Tear_RGB.jpg" alt="DSPX Glitch Scan Tear RGB"><span>DSPX Glitch Scan Tear RGB</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Signal_Loss_Static.jpg" alt="DSPX Signal Loss Static"><span>DSPX Signal Loss Static</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_VHS_Tracking_Chroma.jpg" alt="DSPX VHS Tracking Chroma"><span>DSPX VHS Tracking Chroma</span></figure>
+</div>
+<h4 class="cat">Housings &amp; Glass</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Bezel_Beige_Plastic.jpg" alt="DSPX Bezel Beige Plastic"><span>DSPX Bezel Beige Plastic</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Bezel_Black_Gloss.jpg" alt="DSPX Bezel Black Gloss"><span>DSPX Bezel Black Gloss</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Bezel_Greeble_Metal.jpg" alt="DSPX Bezel Greeble Metal"><span>DSPX Bezel Greeble Metal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Curved_Glass_Smudged.jpg" alt="DSPX Curved Glass Smudged"><span>DSPX Curved Glass Smudged</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Screen_Glass_Clean.jpg" alt="DSPX Screen Glass Clean"><span>DSPX Screen Glass Clean</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_Vent_Grille_Dark.jpg" alt="DSPX Vent Grille Dark"><span>DSPX Vent Grille Dark</span></figure>
+</div>
+<h4 class="cat">LCD Panel</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_E-Ink_Paper.jpg" alt="DSPX E-Ink Paper"><span>DSPX E-Ink Paper</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_LCD_Backlit_Cool.jpg" alt="DSPX LCD Backlit Cool"><span>DSPX LCD Backlit Cool</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_LCD_Dusty_Panel.jpg" alt="DSPX LCD Dusty Panel"><span>DSPX LCD Dusty Panel</span></figure>
+</div>
+<h4 class="cat">LED Matrix</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_LED_Panel_Off_Dark.jpg" alt="DSPX LED Panel Off Dark"><span>DSPX LED Panel Off Dark</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_LED_Round_Amber_Dot_Wall.jpg" alt="DSPX LED Round Amber Dot Wall"><span>DSPX LED Round Amber Dot Wall</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_LED_Round_Red_Dot_Wall.jpg" alt="DSPX LED Round Red Dot Wall"><span>DSPX LED Round Red Dot Wall</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_LED_Square_Blue_Pixel_Grid.jpg" alt="DSPX LED Square Blue Pixel Grid"><span>DSPX LED Square Blue Pixel Grid</span></figure>
+</div>
+<h4 class="cat">RGB Subpixel</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_RGB_Black_Matrix.jpg" alt="DSPX RGB Black Matrix"><span>DSPX RGB Black Matrix</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_RGB_PenTile_OLED.jpg" alt="DSPX RGB PenTile OLED"><span>DSPX RGB PenTile OLED</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/screens-crt/DSPX_RGB_Stripe_LCD.jpg" alt="DSPX RGB Stripe LCD"><span>DSPX RGB Stripe LCD</span></figure>
+</div>
+<h3 class="pkh" id="shader-pack">Shader Pack<small>81 materials</small></h3>
+<p class="pkd">Categories: Glow &amp; Light Leak, Iridescent &amp; Liquid, Op Art &amp; Glitch, Anodized Metal, Candy Plastic, Frosted Glass, Soft Clay, Greeble Displacement, Paper &amp; Poster, Plaster &amp; Terrazzo</p>
+<h4 class="cat">Glow &amp; Light Leak</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Film_Burn_Glow.jpg" alt="DSP Film Burn Glow"><span>DSP Film Burn Glow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Light_Leak_Glow.jpg" alt="DSP Light Leak Glow"><span>DSP Light Leak Glow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Neon_Streak_Glow.jpg" alt="DSP Neon Streak Glow"><span>DSP Neon Streak Glow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Prism_Flare_Glow.jpg" alt="DSP Prism Flare Glow"><span>DSP Prism Flare Glow</span></figure>
+</div>
+<h4 class="cat">Iridescent &amp; Liquid</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Holo_Foil.jpg" alt="DSP Holo Foil"><span>DSP Holo Foil</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Liquid_Marble_Gloss.jpg" alt="DSP Liquid Marble Gloss"><span>DSP Liquid Marble Gloss</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Liquid_Metal_Rainbow.jpg" alt="DSP Liquid Metal Rainbow"><span>DSP Liquid Metal Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Oil_Slick_Chrome.jpg" alt="DSP Oil Slick Chrome"><span>DSP Oil Slick Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Oil_Slick_Lacquer.jpg" alt="DSP Oil Slick Lacquer"><span>DSP Oil Slick Lacquer</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Pastel_Swirl_Satin.jpg" alt="DSP Pastel Swirl Satin"><span>DSP Pastel Swirl Satin</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Pearl.jpg" alt="DSP Pearl"><span>DSP Pearl</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Rainbow_Wave_Lacquer.jpg" alt="DSP Rainbow Wave Lacquer"><span>DSP Rainbow Wave Lacquer</span></figure>
+</div>
+<h4 class="cat">Op Art &amp; Glitch</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Distorted_Marble_Ink.jpg" alt="DSP Distorted Marble Ink"><span>DSP Distorted Marble Ink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Glitch_Dune.jpg" alt="DSP Glitch Dune"><span>DSP Glitch Dune</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Glitch_Sunset.jpg" alt="DSP Glitch Sunset"><span>DSP Glitch Sunset</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Op_Art_Cobalt.jpg" alt="DSP Op Art Cobalt"><span>DSP Op Art Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Op_Art_Coral.jpg" alt="DSP Op Art Coral"><span>DSP Op Art Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Op_Art_Zebra.jpg" alt="DSP Op Art Zebra"><span>DSP Op Art Zebra</span></figure>
+</div>
+<h4 class="cat">Anodized Metal</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Anodized_Cobalt.jpg" alt="DSP Anodized Cobalt"><span>DSP Anodized Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Anodized_Coral.jpg" alt="DSP Anodized Coral"><span>DSP Anodized Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Anodized_Gold.jpg" alt="DSP Anodized Gold"><span>DSP Anodized Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Anodized_Lilac.jpg" alt="DSP Anodized Lilac"><span>DSP Anodized Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Anodized_Titanium.jpg" alt="DSP Anodized Titanium"><span>DSP Anodized Titanium</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Chrome_Smudged.jpg" alt="DSP Chrome Smudged"><span>DSP Chrome Smudged</span></figure>
+</div>
+<h4 class="cat">Candy Plastic</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Candy_Plastic_Blue.jpg" alt="DSP Candy Plastic Blue"><span>DSP Candy Plastic Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Candy_Plastic_Mint.jpg" alt="DSP Candy Plastic Mint"><span>DSP Candy Plastic Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Candy_Plastic_Navy.jpg" alt="DSP Candy Plastic Navy"><span>DSP Candy Plastic Navy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Candy_Plastic_Pink.jpg" alt="DSP Candy Plastic Pink"><span>DSP Candy Plastic Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Candy_Plastic_Red.jpg" alt="DSP Candy Plastic Red"><span>DSP Candy Plastic Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Candy_Plastic_Yellow.jpg" alt="DSP Candy Plastic Yellow"><span>DSP Candy Plastic Yellow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Rubber_Matte_Black.jpg" alt="DSP Rubber Matte Black"><span>DSP Rubber Matte Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_SSS_Gummy_Coral.jpg" alt="DSP SSS Gummy Coral"><span>DSP SSS Gummy Coral</span></figure>
+</div>
+<h4 class="cat">Frosted Glass</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Dichroic_Glass.jpg" alt="DSP Dichroic Glass"><span>DSP Dichroic Glass</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Frosted_Glass_Blue.jpg" alt="DSP Frosted Glass Blue"><span>DSP Frosted Glass Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Frosted_Glass_Clear.jpg" alt="DSP Frosted Glass Clear"><span>DSP Frosted Glass Clear</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Frosted_Glass_Mint.jpg" alt="DSP Frosted Glass Mint"><span>DSP Frosted Glass Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Frosted_Glass_Pink.jpg" alt="DSP Frosted Glass Pink"><span>DSP Frosted Glass Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Smudged_Glass.jpg" alt="DSP Smudged Glass"><span>DSP Smudged Glass</span></figure>
+</div>
+<h4 class="cat">Soft Clay</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Bubblegum.jpg" alt="DSP Soft Clay Bubblegum"><span>DSP Soft Clay Bubblegum</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Butter.jpg" alt="DSP Soft Clay Butter"><span>DSP Soft Clay Butter</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Cobalt.jpg" alt="DSP Soft Clay Cobalt"><span>DSP Soft Clay Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Coral.jpg" alt="DSP Soft Clay Coral"><span>DSP Soft Clay Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Cream.jpg" alt="DSP Soft Clay Cream"><span>DSP Soft Clay Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Ink.jpg" alt="DSP Soft Clay Ink"><span>DSP Soft Clay Ink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Lilac.jpg" alt="DSP Soft Clay Lilac"><span>DSP Soft Clay Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Mint.jpg" alt="DSP Soft Clay Mint"><span>DSP Soft Clay Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Sky.jpg" alt="DSP Soft Clay Sky"><span>DSP Soft Clay Sky</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Soft_Clay_Tangerine.jpg" alt="DSP Soft Clay Tangerine"><span>DSP Soft Clay Tangerine</span></figure>
+</div>
+<h4 class="cat">Greeble Displacement</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Cobalt.jpg" alt="DSP Greeble Cobalt"><span>DSP Greeble Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Coral.jpg" alt="DSP Greeble Coral"><span>DSP Greeble Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Gold.jpg" alt="DSP Greeble Gold"><span>DSP Greeble Gold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Ink.jpg" alt="DSP Greeble Ink"><span>DSP Greeble Ink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Ivory.jpg" alt="DSP Greeble Ivory"><span>DSP Greeble Ivory</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Relief_01.jpg" alt="DSP Greeble Relief 01"><span>DSP Greeble Relief 01</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Relief_02.jpg" alt="DSP Greeble Relief 02"><span>DSP Greeble Relief 02</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Relief_03.jpg" alt="DSP Greeble Relief 03"><span>DSP Greeble Relief 03</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Relief_04.jpg" alt="DSP Greeble Relief 04"><span>DSP Greeble Relief 04</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Greeble_Tech_Grey.jpg" alt="DSP Greeble Tech Grey"><span>DSP Greeble Tech Grey</span></figure>
+</div>
+<h4 class="cat">Paper &amp; Poster</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Glued_Poster_Shadow.jpg" alt="DSP Glued Poster Shadow"><span>DSP Glued Poster Shadow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Glued_Poster_White.jpg" alt="DSP Glued Poster White"><span>DSP Glued Poster White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Blue.jpg" alt="DSP Paper Blue"><span>DSP Paper Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Bottle_Green.jpg" alt="DSP Paper Bottle Green"><span>DSP Paper Bottle Green</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Charcoal.jpg" alt="DSP Paper Charcoal"><span>DSP Paper Charcoal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Cream.jpg" alt="DSP Paper Cream"><span>DSP Paper Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Crinkled.jpg" alt="DSP Paper Crinkled"><span>DSP Paper Crinkled</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Kraft.jpg" alt="DSP Paper Kraft"><span>DSP Paper Kraft</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Mint.jpg" alt="DSP Paper Mint"><span>DSP Paper Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Navy.jpg" alt="DSP Paper Navy"><span>DSP Paper Navy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Red.jpg" alt="DSP Paper Red"><span>DSP Paper Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Watercolour_Rose.jpg" alt="DSP Paper Watercolour Rose"><span>DSP Paper Watercolour Rose</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_White.jpg" alt="DSP Paper White"><span>DSP Paper White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Wine.jpg" alt="DSP Paper Wine"><span>DSP Paper Wine</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Paper_Yellow.jpg" alt="DSP Paper Yellow"><span>DSP Paper Yellow</span></figure>
+</div>
+<h4 class="cat">Plaster &amp; Terrazzo</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Concrete_Smooth.jpg" alt="DSP Concrete Smooth"><span>DSP Concrete Smooth</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Fibre_Felt_Lilac.jpg" alt="DSP Fibre Felt Lilac"><span>DSP Fibre Felt Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Plaster_Rose.jpg" alt="DSP Plaster Rose"><span>DSP Plaster Rose</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Plaster_Sage.jpg" alt="DSP Plaster Sage"><span>DSP Plaster Sage</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Plaster_White.jpg" alt="DSP Plaster White"><span>DSP Plaster White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Stucco_Cream.jpg" alt="DSP Stucco Cream"><span>DSP Stucco Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Terrazzo_Cobalt.jpg" alt="DSP Terrazzo Cobalt"><span>DSP Terrazzo Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/shader-pack/DSP_Terrazzo_Coral.jpg" alt="DSP Terrazzo Coral"><span>DSP Terrazzo Coral</span></figure>
+</div>
+<h3 class="pkh" id="studio-backdrops">Studio Backdrops<small>34 materials</small></h3>
+<p class="pkd">Categories: Colored Sweeps, Grain Gradients, Neon Glow, Soft Gradients, Spotlight Vignettes</p>
+<h4 class="cat">Colored Sweeps</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Acid_Lime_Sweep.jpg" alt="DSPB Acid Lime Sweep"><span>DSPB Acid Lime Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Cerise_Sweep.jpg" alt="DSPB Cerise Sweep"><span>DSPB Cerise Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Electric_Blue_Sweep.jpg" alt="DSPB Electric Blue Sweep"><span>DSPB Electric Blue Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Forest_Gradient.jpg" alt="DSPB Forest Gradient"><span>DSPB Forest Gradient</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Magenta_Violet_Sweep.jpg" alt="DSPB Magenta Violet Sweep"><span>DSPB Magenta Violet Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Mint_Lilac_Sweep.jpg" alt="DSPB Mint Lilac Sweep"><span>DSPB Mint Lilac Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Ocean_Sweep.jpg" alt="DSPB Ocean Sweep"><span>DSPB Ocean Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Pastel_Triad_Sweep.jpg" alt="DSPB Pastel Triad Sweep"><span>DSPB Pastel Triad Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Sunrise_Tri.jpg" alt="DSPB Sunrise Tri"><span>DSPB Sunrise Tri</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Sunset_Sweep.jpg" alt="DSPB Sunset Sweep"><span>DSPB Sunset Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Tangerine_Sweep.jpg" alt="DSPB Tangerine Sweep"><span>DSPB Tangerine Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Teal_Gold_Tri.jpg" alt="DSPB Teal Gold Tri"><span>DSPB Teal Gold Tri</span></figure>
+</div>
+<h4 class="cat">Grain Gradients</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Concrete_Grain_Light.jpg" alt="DSPB Concrete Grain Light"><span>DSPB Concrete Grain Light</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Ink_Dusk_Grain.jpg" alt="DSPB Ink Dusk Grain"><span>DSPB Ink Dusk Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Riso_Blue_Grain.jpg" alt="DSPB Riso Blue Grain"><span>DSPB Riso Blue Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Riso_Pink_Grain.jpg" alt="DSPB Riso Pink Grain"><span>DSPB Riso Pink Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Riso_Teal_Grain.jpg" alt="DSPB Riso Teal Grain"><span>DSPB Riso Teal Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Riso_Yellow_Grain.jpg" alt="DSPB Riso Yellow Grain"><span>DSPB Riso Yellow Grain</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Warm_Film_Grain.jpg" alt="DSPB Warm Film Grain"><span>DSPB Warm Film Grain</span></figure>
+</div>
+<h4 class="cat">Neon Glow</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Lilac_Glow_Strip.jpg" alt="DSPB Lilac Glow Strip"><span>DSPB Lilac Glow Strip</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Neon_Haze_Glow.jpg" alt="DSPB Neon Haze Glow"><span>DSPB Neon Haze Glow</span></figure>
+</div>
+<h4 class="cat">Soft Gradients</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Blush_Horizon.jpg" alt="DSPB Blush Horizon"><span>DSPB Blush Horizon</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Charcoal_Studio.jpg" alt="DSPB Charcoal Studio"><span>DSPB Charcoal Studio</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Cool_Gray_Fade.jpg" alt="DSPB Cool Gray Fade"><span>DSPB Cool Gray Fade</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Midnight_Floor.jpg" alt="DSPB Midnight Floor"><span>DSPB Midnight Floor</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Paper_White_Sweep.jpg" alt="DSPB Paper White Sweep"><span>DSPB Paper White Sweep</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Sage_Mist_Fade.jpg" alt="DSPB Sage Mist Fade"><span>DSPB Sage Mist Fade</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Sand_Dune_Fade.jpg" alt="DSPB Sand Dune Fade"><span>DSPB Sand Dune Fade</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Warm_Ivory_Fade.jpg" alt="DSPB Warm Ivory Fade"><span>DSPB Warm Ivory Fade</span></figure>
+</div>
+<h4 class="cat">Spotlight Vignettes</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Spotlight_Cool.jpg" alt="DSPB Spotlight Cool"><span>DSPB Spotlight Cool</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Spotlight_Gold_Halo.jpg" alt="DSPB Spotlight Gold Halo"><span>DSPB Spotlight Gold Halo</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Spotlight_Pink_Halo.jpg" alt="DSPB Spotlight Pink Halo"><span>DSPB Spotlight Pink Halo</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Spotlight_Stage_Violet.jpg" alt="DSPB Spotlight Stage Violet"><span>DSPB Spotlight Stage Violet</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-backdrops/DSPB_Spotlight_Warm.jpg" alt="DSPB Spotlight Warm"><span>DSPB Spotlight Warm</span></figure>
+</div>
+<h3 class="pkh" id="studio-essentials">Studio Essentials<small>37 materials</small></h3>
+<p class="pkd">Categories: Ceramic &amp; Porcelain, Clay Render, Metals &amp; Anodized, Painted &amp; Coated, Plastics, Soft-Touch &amp; Rubber, Specials</p>
+<h4 class="cat">Ceramic &amp; Porcelain</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Ceramic_Glaze_Cobalt.jpg" alt="DSPE Ceramic Glaze Cobalt"><span>DSPE Ceramic Glaze Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Ceramic_Glaze_White.jpg" alt="DSPE Ceramic Glaze White"><span>DSPE Ceramic Glaze White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Ceramic_Matte_Bisque.jpg" alt="DSPE Ceramic Matte Bisque"><span>DSPE Ceramic Matte Bisque</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Porcelain_Translucent.jpg" alt="DSPE Porcelain Translucent"><span>DSPE Porcelain Translucent</span></figure>
+</div>
+<h4 class="cat">Clay Render</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Clay_Render_Grey.jpg" alt="DSPE Clay Render Grey"><span>DSPE Clay Render Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Clay_Render_Stone_White.jpg" alt="DSPE Clay Render Stone White"><span>DSPE Clay Render Stone White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Clay_Render_Warm.jpg" alt="DSPE Clay Render Warm"><span>DSPE Clay Render Warm</span></figure>
+</div>
+<h4 class="cat">Metals &amp; Anodized</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Anodized_Aluminium_Matte.jpg" alt="DSPE Anodized Aluminium Matte"><span>DSPE Anodized Aluminium Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Brushed_Aluminium_Product.jpg" alt="DSPE Brushed Aluminium Product"><span>DSPE Brushed Aluminium Product</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Gunmetal_Cerakote.jpg" alt="DSPE Gunmetal Cerakote"><span>DSPE Gunmetal Cerakote</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Polished_Steel_Product.jpg" alt="DSPE Polished Steel Product"><span>DSPE Polished Steel Product</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Satin_Brass.jpg" alt="DSPE Satin Brass"><span>DSPE Satin Brass</span></figure>
+</div>
+<h4 class="cat">Painted &amp; Coated</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Hammertone_Paint_Blue.jpg" alt="DSPE Hammertone Paint Blue"><span>DSPE Hammertone Paint Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Painted_Metal_Anthracite.jpg" alt="DSPE Painted Metal Anthracite"><span>DSPE Painted Metal Anthracite</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Painted_Metal_Ivory_Enamel.jpg" alt="DSPE Painted Metal Ivory Enamel"><span>DSPE Painted Metal Ivory Enamel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Painted_Metal_Racing_Red.jpg" alt="DSPE Painted Metal Racing Red"><span>DSPE Painted Metal Racing Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Powder_Coat_Matte_Black.jpg" alt="DSPE Powder Coat Matte Black"><span>DSPE Powder Coat Matte Black</span></figure>
+</div>
+<h4 class="cat">Plastics</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Gloss_Plastic_Black.jpg" alt="DSPE Gloss Plastic Black"><span>DSPE Gloss Plastic Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Gloss_Plastic_Cobalt.jpg" alt="DSPE Gloss Plastic Cobalt"><span>DSPE Gloss Plastic Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Gloss_Plastic_Signal_Red.jpg" alt="DSPE Gloss Plastic Signal Red"><span>DSPE Gloss Plastic Signal Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Gloss_Plastic_White.jpg" alt="DSPE Gloss Plastic White"><span>DSPE Gloss Plastic White</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Matte_Plastic_Charcoal.jpg" alt="DSPE Matte Plastic Charcoal"><span>DSPE Matte Plastic Charcoal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Matte_Plastic_Cream.jpg" alt="DSPE Matte Plastic Cream"><span>DSPE Matte Plastic Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Matte_Plastic_Terracotta.jpg" alt="DSPE Matte Plastic Terracotta"><span>DSPE Matte Plastic Terracotta</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Satin_Plastic_Graphite.jpg" alt="DSPE Satin Plastic Graphite"><span>DSPE Satin Plastic Graphite</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Satin_Plastic_Ivory.jpg" alt="DSPE Satin Plastic Ivory"><span>DSPE Satin Plastic Ivory</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Satin_Plastic_Sage.jpg" alt="DSPE Satin Plastic Sage"><span>DSPE Satin Plastic Sage</span></figure>
+</div>
+<h4 class="cat">Soft-Touch &amp; Rubber</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Rubber_Black_Matte.jpg" alt="DSPE Rubber Black Matte"><span>DSPE Rubber Black Matte</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Rubber_Grip_Red.jpg" alt="DSPE Rubber Grip Red"><span>DSPE Rubber Grip Red</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Rubber_Signal_Yellow.jpg" alt="DSPE Rubber Signal Yellow"><span>DSPE Rubber Signal Yellow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Soft-Touch_Mint.jpg" alt="DSPE Soft-Touch Mint"><span>DSPE Soft-Touch Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Soft-Touch_Navy.jpg" alt="DSPE Soft-Touch Navy"><span>DSPE Soft-Touch Navy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Soft-Touch_Sand.jpg" alt="DSPE Soft-Touch Sand"><span>DSPE Soft-Touch Sand</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Soft-Touch_Stone_Grey.jpg" alt="DSPE Soft-Touch Stone Grey"><span>DSPE Soft-Touch Stone Grey</span></figure>
+</div>
+<h4 class="cat">Specials</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Pearl_Plastic_Thin_Film.jpg" alt="DSPE Pearl Plastic Thin Film"><span>DSPE Pearl Plastic Thin Film</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Sandblasted_Plastic_Grey.jpg" alt="DSPE Sandblasted Plastic Grey"><span>DSPE Sandblasted Plastic Grey</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/studio-essentials/DSPE_Silicone_Translucent_Pink.jpg" alt="DSPE Silicone Translucent Pink"><span>DSPE Silicone Translucent Pink</span></figure>
+</div>
+<h3 class="pkh" id="toon-npr">Toon NPR<small>24 materials</small></h3>
+<p class="pkd">Categories: Cel &amp; Anime, Cel Styles, Glass &amp; Water, Ink &amp; Outline, Metal Toon, Textured Toon</p>
+<h4 class="cat">Cel &amp; Anime</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Anime_Hair_Night.jpg" alt="DSPT Anime Hair Night"><span>DSPT Anime Hair Night</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Anime_Hair_Sunset.jpg" alt="DSPT Anime Hair Sunset"><span>DSPT Anime Hair Sunset</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Anime_Skin.jpg" alt="DSPT Anime Skin"><span>DSPT Anime Skin</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Charcoal.jpg" alt="DSPT Cel Charcoal"><span>DSPT Cel Charcoal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Cream.jpg" alt="DSPT Cel Cream"><span>DSPT Cel Cream</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Three-Band_Teal.jpg" alt="DSPT Cel Three-Band Teal"><span>DSPT Cel Three-Band Teal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Two-Tone_Tomato.jpg" alt="DSPT Cel Two-Tone Tomato"><span>DSPT Cel Two-Tone Tomato</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Violet_Shadow.jpg" alt="DSPT Cel Violet Shadow"><span>DSPT Cel Violet Shadow</span></figure>
+</div>
+<h4 class="cat">Cel Styles</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Crosshatch_Charcoal.jpg" alt="DSPT Cel Crosshatch Charcoal"><span>DSPT Cel Crosshatch Charcoal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Halftone_Bubblegum.jpg" alt="DSPT Cel Halftone Bubblegum"><span>DSPT Cel Halftone Bubblegum</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Halftone_Meadow.jpg" alt="DSPT Cel Halftone Meadow"><span>DSPT Cel Halftone Meadow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Hatched_Marigold.jpg" alt="DSPT Cel Hatched Marigold"><span>DSPT Cel Hatched Marigold</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Rim_Bubblegum.jpg" alt="DSPT Cel Rim Bubblegum"><span>DSPT Cel Rim Bubblegum</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Rim_Cobalt.jpg" alt="DSPT Cel Rim Cobalt"><span>DSPT Cel Rim Cobalt</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Spec_Violet.jpg" alt="DSPT Cel Spec Violet"><span>DSPT Cel Spec Violet</span></figure>
+</div>
+<h4 class="cat">Glass &amp; Water</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Glass.jpg" alt="DSPT Cel Glass"><span>DSPT Cel Glass</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Cel_Water.jpg" alt="DSPT Cel Water"><span>DSPT Cel Water</span></figure>
+</div>
+<h4 class="cat">Ink &amp; Outline</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Ink_Outline_Charcoal.jpg" alt="DSPT Ink Outline Charcoal"><span>DSPT Ink Outline Charcoal</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Ink_Wash_Sepia.jpg" alt="DSPT Ink Wash Sepia"><span>DSPT Ink Wash Sepia</span></figure>
+</div>
+<h4 class="cat">Metal Toon</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Matcap_Chrome.jpg" alt="DSPT Matcap Chrome"><span>DSPT Matcap Chrome</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Matcap_Copper.jpg" alt="DSPT Matcap Copper"><span>DSPT Matcap Copper</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Matcap_Gold.jpg" alt="DSPT Matcap Gold"><span>DSPT Matcap Gold</span></figure>
+</div>
+<h4 class="cat">Textured Toon</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Toon_Grey_Stone.jpg" alt="DSPT Toon Grey Stone"><span>DSPT Toon Grey Stone</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/toon-npr/DSPT_Toon_Painted_Wall.jpg" alt="DSPT Toon Painted Wall"><span>DSPT Toon Painted Wall</span></figure>
+</div>
+<h3 class="pkh" id="y2k">Y2K<small>62 materials</small></h3>
+<p class="pkd">Categories: Airbrush Gradient, Bubble &amp; Blob Glass, Glitch &amp; Screen, Glitter &amp; Sparkle, Inflatable &amp; Vinyl, Jelly &amp; Gel, Pastel Chrome, Translucent Plastic</p>
+<h4 class="cat">Airbrush Gradient</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Airbrush_Aqua_Fade.jpg" alt="DSPY Airbrush Aqua Fade"><span>DSPY Airbrush Aqua Fade</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Airbrush_Butterfly_Pastel.jpg" alt="DSPY Airbrush Butterfly Pastel"><span>DSPY Airbrush Butterfly Pastel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Airbrush_Cotton_Candy.jpg" alt="DSPY Airbrush Cotton Candy"><span>DSPY Airbrush Cotton Candy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Airbrush_Cyber_Dusk.jpg" alt="DSPY Airbrush Cyber Dusk"><span>DSPY Airbrush Cyber Dusk</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Airbrush_Light_Leak_Pastel.jpg" alt="DSPY Airbrush Light Leak Pastel"><span>DSPY Airbrush Light Leak Pastel</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Airbrush_Peach_Sunset.jpg" alt="DSPY Airbrush Peach Sunset"><span>DSPY Airbrush Peach Sunset</span></figure>
+</div>
+<h4 class="cat">Bubble &amp; Blob Glass</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Blob_Glass_Blue.jpg" alt="DSPY Blob Glass Blue"><span>DSPY Blob Glass Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Blob_Glass_Lilac.jpg" alt="DSPY Blob Glass Lilac"><span>DSPY Blob Glass Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Blob_Glass_Pink.jpg" alt="DSPY Blob Glass Pink"><span>DSPY Blob Glass Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Blob_Glass_Rainbow.jpg" alt="DSPY Blob Glass Rainbow"><span>DSPY Blob Glass Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Pearl_Bubble.jpg" alt="DSPY Pearl Bubble"><span>DSPY Pearl Bubble</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Smudged_Bubble.jpg" alt="DSPY Smudged Bubble"><span>DSPY Smudged Bubble</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Soap_Bubble.jpg" alt="DSPY Soap Bubble"><span>DSPY Soap Bubble</span></figure>
+</div>
+<h4 class="cat">Glitch &amp; Screen</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_CRT_Cyan_Scanlines.jpg" alt="DSPY CRT Cyan Scanlines"><span>DSPY CRT Cyan Scanlines</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_CRT_Magenta_Scanlines.jpg" alt="DSPY CRT Magenta Scanlines"><span>DSPY CRT Magenta Scanlines</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitch_Dune_Screen.jpg" alt="DSPY Glitch Dune Screen"><span>DSPY Glitch Dune Screen</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitch_Sunset_Screen.jpg" alt="DSPY Glitch Sunset Screen"><span>DSPY Glitch Sunset Screen</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_LCD_Pixel_Grid.jpg" alt="DSPY LCD Pixel Grid"><span>DSPY LCD Pixel Grid</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Light_Leak_Screen.jpg" alt="DSPY Light Leak Screen"><span>DSPY Light Leak Screen</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vaporwave_Neon_Grid.jpg" alt="DSPY Vaporwave Neon Grid"><span>DSPY Vaporwave Neon Grid</span></figure>
+</div>
+<h4 class="cat">Glitter &amp; Sparkle</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Baby_Blue.jpg" alt="DSPY Glitter Baby Blue"><span>DSPY Glitter Baby Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Cosmic_Black.jpg" alt="DSPY Glitter Cosmic Black"><span>DSPY Glitter Cosmic Black</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Gold_Champagne.jpg" alt="DSPY Glitter Gold Champagne"><span>DSPY Glitter Gold Champagne</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Hot_Pink.jpg" alt="DSPY Glitter Hot Pink"><span>DSPY Glitter Hot Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Jelly_Pink.jpg" alt="DSPY Glitter Jelly Pink"><span>DSPY Glitter Jelly Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Lilac.jpg" alt="DSPY Glitter Lilac"><span>DSPY Glitter Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Lime.jpg" alt="DSPY Glitter Lime"><span>DSPY Glitter Lime</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Rainbow_Holo.jpg" alt="DSPY Glitter Rainbow Holo"><span>DSPY Glitter Rainbow Holo</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Glitter_Silver.jpg" alt="DSPY Glitter Silver"><span>DSPY Glitter Silver</span></figure>
+</div>
+<h4 class="cat">Inflatable &amp; Vinyl</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Clear_PVC_Inflatable.jpg" alt="DSPY Clear PVC Inflatable"><span>DSPY Clear PVC Inflatable</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Holo_PVC.jpg" alt="DSPY Holo PVC"><span>DSPY Holo PVC</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vinyl_Baby_Blue.jpg" alt="DSPY Vinyl Baby Blue"><span>DSPY Vinyl Baby Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vinyl_Bubblegum_Pink.jpg" alt="DSPY Vinyl Bubblegum Pink"><span>DSPY Vinyl Bubblegum Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vinyl_Cobalt_Pool_Toy.jpg" alt="DSPY Vinyl Cobalt Pool Toy"><span>DSPY Vinyl Cobalt Pool Toy</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vinyl_Coral.jpg" alt="DSPY Vinyl Coral"><span>DSPY Vinyl Coral</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vinyl_Lemon.jpg" alt="DSPY Vinyl Lemon"><span>DSPY Vinyl Lemon</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vinyl_Lilac.jpg" alt="DSPY Vinyl Lilac"><span>DSPY Vinyl Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Vinyl_Mint.jpg" alt="DSPY Vinyl Mint"><span>DSPY Vinyl Mint</span></figure>
+</div>
+<h4 class="cat">Jelly &amp; Gel</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Gel_Clear_Aqua.jpg" alt="DSPY Gel Clear Aqua"><span>DSPY Gel Clear Aqua</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Jelly_Blueberry.jpg" alt="DSPY Jelly Blueberry"><span>DSPY Jelly Blueberry</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Jelly_Grape_Soda.jpg" alt="DSPY Jelly Grape Soda"><span>DSPY Jelly Grape Soda</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Jelly_Lime.jpg" alt="DSPY Jelly Lime"><span>DSPY Jelly Lime</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Jelly_Orange.jpg" alt="DSPY Jelly Orange"><span>DSPY Jelly Orange</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Jelly_Strawberry.jpg" alt="DSPY Jelly Strawberry"><span>DSPY Jelly Strawberry</span></figure>
+</div>
+<h4 class="cat">Pastel Chrome</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Chrome_Baby_Blue.jpg" alt="DSPY Chrome Baby Blue"><span>DSPY Chrome Baby Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Chrome_Bubblegum_Pink.jpg" alt="DSPY Chrome Bubblegum Pink"><span>DSPY Chrome Bubblegum Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Chrome_Lilac.jpg" alt="DSPY Chrome Lilac"><span>DSPY Chrome Lilac</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Chrome_Mint.jpg" alt="DSPY Chrome Mint"><span>DSPY Chrome Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Chrome_Peach.jpg" alt="DSPY Chrome Peach"><span>DSPY Chrome Peach</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Cyber_Silver.jpg" alt="DSPY Cyber Silver"><span>DSPY Cyber Silver</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Liquid_Metal_Blue_Tint.jpg" alt="DSPY Liquid Metal Blue Tint"><span>DSPY Liquid Metal Blue Tint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Liquid_Metal_Rainbow.jpg" alt="DSPY Liquid Metal Rainbow"><span>DSPY Liquid Metal Rainbow</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Oil_Slick_Chrome.jpg" alt="DSPY Oil Slick Chrome"><span>DSPY Oil Slick Chrome</span></figure>
+</div>
+<h4 class="cat">Translucent Plastic</h4><div class="tiles">
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Frosted_Acrylic_Blue.jpg" alt="DSPY Frosted Acrylic Blue"><span>DSPY Frosted Acrylic Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Frosted_Acrylic_Mint.jpg" alt="DSPY Frosted Acrylic Mint"><span>DSPY Frosted Acrylic Mint</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Frosted_Acrylic_Pink.jpg" alt="DSPY Frosted Acrylic Pink"><span>DSPY Frosted Acrylic Pink</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Plastic_Bondi_Blue.jpg" alt="DSPY Plastic Bondi Blue"><span>DSPY Plastic Bondi Blue</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Plastic_Grape.jpg" alt="DSPY Plastic Grape"><span>DSPY Plastic Grape</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Plastic_Lime.jpg" alt="DSPY Plastic Lime"><span>DSPY Plastic Lime</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Plastic_Smoke.jpg" alt="DSPY Plastic Smoke"><span>DSPY Plastic Smoke</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Plastic_Strawberry.jpg" alt="DSPY Plastic Strawberry"><span>DSPY Plastic Strawberry</span></figure>
+<figure class="tile" style="margin:0"><img loading="lazy" src="Previews/y2k/DSPY_Plastic_Tangerine.jpg" alt="DSPY Plastic Tangerine"><span>DSPY Plastic Tangerine</span></figure>
+</div>
+</section>
+
+<section class="sec">
+<h2>Requirements &amp; install</h2>
+<ul class="feat">
+<li><b>Blender:</b> 5.x. The materials are Cycles materials; Toon NPR is built for EEVEE.</li>
+<li><b>Install:</b> one Asset Library per pack. Import method: Append (Reuse Data).</li>
+<li><b>Geometry:</b> displacement materials need dense geometry. See the README of each pack.</li>
+<li><b>Files:</b> keep each pack&rsquo;s folder together, the texture paths are relative.</li>
+</ul>
+</section>
+
+<section class="sec">
+<h2>FAQ</h2>
+<details><summary>Do I need every pack?</summary><p>No. Each pack is its own Asset Library. Install only the packs you use.</p></details>
+<details><summary>Where are the previews?</summary><p>Every material is shown on this page. The preview files are in the Previews folder, one sub-folder per pack.</p></details>
+<details><summary>Which Blender version?</summary><p>Blender 5.x, with Cycles. Toon NPR is built for EEVEE.</p></details>
+</section>
+
+<footer class="foot"><span>Designer&#8217;s Surface Pack Bundle</span><span>765 materials &middot; Blender 5.x &middot; Cycles</span></footer>
+</div></body></html>
